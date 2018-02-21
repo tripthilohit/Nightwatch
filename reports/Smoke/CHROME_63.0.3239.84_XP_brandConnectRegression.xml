@@ -1,47 +1,63 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="1"
+<testsuites errors="2"
+            failures="0"
             tests="7">
 
   <testsuite name="smoke.brandConnectRegression"
-    errors="0" failures="1" hostname="" id="" package="smoke" skipped="1"
-    tests="7" time="137.9" timestamp="Wed, 07 Feb 2018 21:21:41 GMT">
+    errors="2" failures="0" hostname="" id="" package="smoke" skipped="0"
+    tests="7" time="274.8" timestamp="Tue, 20 Feb 2018 22:08:58 GMT">
   
-    <testcase name="downloadImages" classname="smoke.brandConnectRegression" time="42.84" assertions="1">
+    <testcase name="downloadImages" classname="smoke.brandConnectRegression" time="72.38" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signIn" classname="smoke.brandConnectRegression" time="21.61" assertions="0">
+    <testcase name="signInAdmin3" classname="smoke.brandConnectRegression" time="21.40" assertions="0">
     </testcase>
   
-    <testcase name="createBrandConnectTopic" classname="smoke.brandConnectRegression" time="19.54" assertions="0">
+    <testcase name="createPrivateDiscussion" classname="smoke.brandConnectRegression" time="68.25" assertions="0">
     </testcase>
   
-    <testcase name="createBrandConnectDiscussion" classname="smoke.brandConnectRegression" time="30.46" assertions="0">
+    <testcase name="signinMember4" classname="smoke.brandConnectRegression" time="25.02" assertions="0">
     </testcase>
   
-    <testcase name="adminComment" classname="smoke.brandConnectRegression" time="18.02" assertions="0">
+    <testcase name="verifyPrivateDiscussionMale" classname="smoke.brandConnectRegression" time="38.03" assertions="0">
     </testcase>
   
-    <testcase name="memberSignIn" classname="smoke.brandConnectRegression" time="5.473" assertions="1">  <failure message="Timed out while waiting for element &lt;body&gt; to be present for 2000 milliseconds.">    at Object.memberSignIn (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:117:6)
+    <testcase name="signinFemale" classname="smoke.brandConnectRegression" time="27.28" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyPrivateDiscussionFemale" classname="smoke.brandConnectRegression" time="22.42" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+      ERROR: Unable to locate element: &quot;//a[@class='header-logout']&quot; using: xpath
+    at Object.verifyPrivateDiscussion (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:829:6)
     at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at process._tickCallback (internal/process/next_tick.js:150:11)</failure>
-
-    
-    </testcase>
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+ERROR: Unable to locate element: &quot;//a[@class='header-logout']&quot; using: xpath
+    at Object.verifyPrivateDiscussion (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:829:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+    </system-err>
   
 
-  
-
-  
-    
-    <testcase
-      name="memberComment" classname="smoke.brandConnectRegression">
-      <skipped />
-    </testcase>
-    
   
   </testsuite>
 </testsuites>
