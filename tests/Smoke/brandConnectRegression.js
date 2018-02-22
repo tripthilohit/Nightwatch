@@ -36,7 +36,7 @@ var downloadImages = function(driver)
 var modulecreateBrandConnect = require('./createBrandConnect.js')
 var modulememberSigninEmail = require('./memberSigninEmail.js')
 var modulecreateSurvey = require('./createSurvey.js')
-
+var modulegroupRegression = require('./groupRegression.js')
 
 var editDiscussion = function(driver)
 {
@@ -836,7 +836,7 @@ var verifyPrivateDiscussionFemale = function(driver)
     .pause(5000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcverifyPrivateDiscussionFemale.png')
     .pause(2000)
-     //logout
+    //logout
     .click("//a[@class='header-logout']")
     .pause(3000)
 
@@ -870,7 +870,8 @@ var signinFemale = function(driver)
 }
 module.exports={
     downloadImages: downloadImages,
-  signIn: modulecreateBrandConnect.signIn,    //signin to member application as an admin
+  
+  /*signIn: modulecreateBrandConnect.signIn,    //signin to member application as an admin
 createBrandConnectTopic: modulecreateBrandConnect.createBrandConnectTopic,
 createBrandConnectDiscussion: modulecreateBrandConnect.createBrandConnectDiscussion,
 editDiscussion: editDiscussion,
@@ -893,11 +894,13 @@ verifyMemberDiscussionOnApproval: verifyMemberDiscussionOnApproval,
 signInAdmin2: modulecreateBrandConnect.signIn,         //signin to member application as an admin again to hide comment
 hideComment: hideComment,
 signinMember3: modulememberSigninEmail.signinEmail,
-verifyHideComment: verifyHideComment
+verifyHideComment: verifyHideComment,
+signinAdmin4: modulegroupRegression.signinEmail,
+createMaleGroup: modulegroupRegression.createGroupMale,
 signInAdmin3: modulecreateBrandConnect.signIn,
 createPrivateDiscussion: createPrivateDiscussion,
 signinMember4: modulememberSigninEmail.signinEmail,
 verifyPrivateDiscussionMale: verifyPrivateDiscussionMale,
 signinFemale: signinFemale,
-verifyPrivateDiscussionFemale: verifyPrivateDiscussionFemale
+verifyPrivateDiscussionFemale: verifyPrivateDiscussionFemale*/
 }

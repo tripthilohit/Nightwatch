@@ -1,81 +1,44 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<<<<<<< HEAD
 <testsuites errors="0"
             failures="0"
-            tests="2">
+            tests="9">
 
   <testsuite name="smoke.brandConnectRegression"
     errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="2" time="240.1" timestamp="Tue, 13 Feb 2018 21:50:20 GMT">
+    tests="9" time="249.3" timestamp="Thu, 22 Feb 2018 19:32:03 GMT">
   
-    <testcase name="memberSignIn" classname="smoke.brandConnectRegression" time="34.17" assertions="0">
-    </testcase>
-  
-    <testcase name="memberCommentSorting" classname="smoke.brandConnectRegression" time="205.9" assertions="0">
-=======
-<testsuites errors="2"
-            failures="0"
-            tests="7">
-
-  <testsuite name="smoke.brandConnectRegression"
-    errors="2" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="7" time="274.8" timestamp="Tue, 20 Feb 2018 22:08:58 GMT">
-  
-    <testcase name="downloadImages" classname="smoke.brandConnectRegression" time="72.38" assertions="1">
+    <testcase name="downloadImages" classname="smoke.brandConnectRegression" time="58.58" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signInAdmin3" classname="smoke.brandConnectRegression" time="21.40" assertions="0">
+    <testcase name="signinAdmin4" classname="smoke.brandConnectRegression" time="14.68" assertions="0">
     </testcase>
   
-    <testcase name="createPrivateDiscussion" classname="smoke.brandConnectRegression" time="68.25" assertions="0">
+    <testcase name="createMaleGroup" classname="smoke.brandConnectRegression" time="25.65" assertions="0">
     </testcase>
   
-    <testcase name="signinMember4" classname="smoke.brandConnectRegression" time="25.02" assertions="0">
+    <testcase name="signInAdmin3" classname="smoke.brandConnectRegression" time="17.89" assertions="0">
     </testcase>
   
-    <testcase name="verifyPrivateDiscussionMale" classname="smoke.brandConnectRegression" time="38.03" assertions="0">
+    <testcase name="createPrivateDiscussion" classname="smoke.brandConnectRegression" time="47.54" assertions="0">
     </testcase>
   
-    <testcase name="signinFemale" classname="smoke.brandConnectRegression" time="27.28" assertions="0">
->>>>>>> tests/tri_bc_regression1
+    <testcase name="signinMember4" classname="smoke.brandConnectRegression" time="21.46" assertions="0">
     </testcase>
   
-    <testcase name="verifyPrivateDiscussionFemale" classname="smoke.brandConnectRegression" time="22.42" assertions="0">
+    <testcase name="verifyPrivateDiscussionMale" classname="smoke.brandConnectRegression" time="16.24" assertions="0">
+    </testcase>
+  
+    <testcase name="signinFemale" classname="smoke.brandConnectRegression" time="28.29" assertions="0">
+    </testcase>
+  
+    <testcase name="verifyPrivateDiscussionFemale" classname="smoke.brandConnectRegression" time="19.00" assertions="0">
     </testcase>
   
 
   
-<<<<<<< HEAD
-=======
-    <system-err>
-      ERROR: Unable to locate element: &quot;//a[@class='header-logout']&quot; using: xpath
-    at Object.verifyPrivateDiscussion (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:829:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//a[@class='header-logout']&quot; using: xpath
-    at Object.verifyPrivateDiscussion (/Users/tripthi/Desktop/Nightwatch/tests/smoke/brandConnectRegression.js:829:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-    </system-err>
-  
 
   
->>>>>>> tests/tri_bc_regression1
   </testsuite>
 </testsuites>
