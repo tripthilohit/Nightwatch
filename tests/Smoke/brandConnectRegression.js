@@ -868,10 +868,137 @@ var signinFemale = function(driver)
     .pause(2000)
 
 }
+var archiveTopic = function(driver)
+{
+    driver
+    .useXpath()
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(5000)
+    //click discussion title
+    .click("(//div[@class='bconnect-topics-item'])[1]/h3/a")
+    .pause(2000)
+    //click topic settings
+    .click("//label[@class='bconnect-topics-item-config']")
+    .pause(1000)
+    //click archive link
+    .click("//label[@class='bconnect-topics-item-config']/span/a[2]")
+    .pause(3000)
+    .execute('scrollTo(200,200)')
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcarchiveTopic.png')
+    .pause(2000)
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(4000)
+    .click("//a[@href='/brand_connect/topics/archive']")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcarchiveTopicVerify.png')
+    .pause(2000)
+}
+var closeDiscussion = function(driver)
+{
+    driver
+    .useXpath()
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(4000)
+    .click("//a[@title='discussion created by a member']")
+    .pause(2000)
+    //click topic settings
+    .click("//label[@class='bconnect-topics-item-config']")
+    .pause(1000)
+    //click close discussion
+    .click("//label[@class='bconnect-topics-item-config']/span/a[2]")
+    .pause(3000)
+    .acceptAlert()
+    .pause(3000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bccloseDiscussion.png')
+    .pause(2000)
+    .click("(//a[@class='bconnect-discussions-title'])[1]")
+    .pause(3000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bccloseDiscussion.png')
+    .pause(2000)
+    .execute('scrollTo(800,800)')
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bccloseDiscussionVerify.png')
+    .pause(2000)
+}
+var deleteDiscussion = function(driver)
+{
+    driver
+    .useXpath()
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(4000)
+    .click("//a[@title='discussion created by a member']")
+    .pause(2000)
+    //click topic settings
+    .click("//label[@class='bconnect-topics-item-config']")
+    .pause(1000)
+    //click delete discussion
+    .click("//label[@class='bconnect-topics-item-config']/span/a[2]")
+    .pause(3000)
+    .acceptAlert()
+    .pause(3000)
+    .execute('scrollTo(500,500)')
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bccloseDiscussion.png')
+    .pause(2000)
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(4000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bccloseDiscussionVerify.png')
+    .pause(2000)
+     //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+}
+var memberSideVerifyArchiveClose = function(driver)
+{
+    driver
+    .useXpath()
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(4000)
+    .execute('scrollTo(500,500)')
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcmemberSideVerifyArchiveClose.png')
+    .pause(2000)
+    //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+   
+
+}
+var unArchive = function(driver)
+{
+    driver
+    .useXpath()
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(4000)
+    //click archive
+    .click("//a[@href='/brand_connect/topics/archive']")
+    .pause(2000)
+    .click("//a[contains(text(), 'Topic for Male only')]")
+    .pause(4000)
+    //click topic settings
+    .click("//label[@class='bconnect-topics-item-config']")
+    .pause(1000)
+    //click unarchive this topic
+    .click("//label[@class='bconnect-topics-item-config']/span/a[2]")
+    .pause(3000)
+    //click Brand connect link
+    .click("//a[@href='/brand_connect/topics']")
+    .pause(4000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/bcVerifyUnArchive.png')
+    .pause(2000)
+    //logout
+    .click("//a[@class='header-logout']")
+    .pause(3000)
+
+}
 module.exports={
     downloadImages: downloadImages,
   
-  /*signIn: modulecreateBrandConnect.signIn,    //signin to member application as an admin
+  signIn: modulecreateBrandConnect.signIn,    //signin to member application as an admin
 createBrandConnectTopic: modulecreateBrandConnect.createBrandConnectTopic,
 createBrandConnectDiscussion: modulecreateBrandConnect.createBrandConnectDiscussion,
 editDiscussion: editDiscussion,
@@ -902,5 +1029,14 @@ createPrivateDiscussion: createPrivateDiscussion,
 signinMember4: modulememberSigninEmail.signinEmail,
 verifyPrivateDiscussionMale: verifyPrivateDiscussionMale,
 signinFemale: signinFemale,
-verifyPrivateDiscussionFemale: verifyPrivateDiscussionFemale*/
+verifyPrivateDiscussionFemale: verifyPrivateDiscussionFemale,
+signinAdmin5: modulecreateBrandConnect.signIn,
+archiveTopic: archiveTopic,
+closeDiscussion: closeDiscussion,
+deleteDiscussion: deleteDiscussion,
+signinMember5: modulememberSigninEmail.signinEmail,
+memberSideVerifyArchiveClose: memberSideVerifyArchiveClose,
+signinAdmin6: modulecreateBrandConnect.signIn,
+unArchive: unArchive
+
 }
