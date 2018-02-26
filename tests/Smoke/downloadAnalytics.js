@@ -300,9 +300,9 @@ var downloadAnalyticsPreview = function(driver)
 module.exports={
   downloadImages: downloadImages,
   adminlogin:adminlogin,
- // activityMonitoring:activityMonitoring,
+ activityMonitoring:activityMonitoring,
   OverviewTab:OverviewTab,
-  downloadAnalytics:downloadAnalytics
- // downloadAnalyticsPreviewButton:downloadAnalyticsPreviewButton,
-  //downloadAnalyticsPreview:downloadAnalyticsPreview
+  downloadAnalytics:downloadAnalytics,
+ downloadAnalyticsPreviewButton:downloadAnalyticsPreviewButton,
+downloadAnalyticsPreview:downloadAnalyticsPreview
 }
