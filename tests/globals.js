@@ -1,30 +1,32 @@
 var userNames = {
-  
-  memberURL: 'https://tripsprint95t.staging.socialmedialink.com',
-  memberEmail: 'mark@yopmail.com',
-  memberPassword: '12345678',
+
+  memberURL: 'https://tripsprint95kroger.staging.socialmedialink.com/',
+  memberEmail: 'surt@yopmail.com',
+  memberPassword: 'general1234',
   memberFirstName: 'first',
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
-  sprint: '95t',
-  adminURL: 'https://admin.staging.socialmedialink.com',
-  adminEmail: 'tripsprint95t@yopmail.com',
+
+  sprint: '96a',
+  adminURL: 'https://admin.staging.socialmedialink.com/',
+  adminEmail: 'tripsprint95kroger@yopmail.com',
   adminPassword: 'General123$',
-  facebookEmail: 'kqqdfbv_alisonsen_1454598705@tfbnw.net',
+  facebookEmail: 'sukada.testmember8@socialmedialink.com',
   facebookPass: 'general1234',
-  twitterEmail: 'tripthi.testmember15@socialmedialink.com',
+  twitterEmail: 'sukada.ramakrishna@socialmedialink.com',
   twitterPass: 'general1234',
-  instagramUserName: 'tripthi.shetty',
-  instagramPass: 'abcd1234',
-  superAdminEmail: 'tripthi.testmember3@socialmedialink.com',
-  superAdminPass: 'General123$',
+  instagramUserName: 'sukadar',
+  instagramPass: 'general1234',
+  superAdminEmail: 'sukada.ramakrishna@socialmedialink.com',
+  superAdminPass: 'General1234#',
   account_no: 667,
   path: 'C:/Users/you/Downloads/',
-  memberEmailFemale: 'lolo@yopmail.com',
   darDate:"(//td[@class='day'])[12]",
   uin:'12340'
-};
+ 
+   };
+
 
 var cbt = require('cbt_tunnels');
 
@@ -32,8 +34,8 @@ module.exports = {
   beforeEach : function(done) {
     console.log('Starting up tunnel');
     cbt.start({
-      'username': 'tripthi.shetty@socialmedialink.com',
-      'authkey': 'u283c7d7d4fafeb7'
+      'username': 'sukada.ramakrishna@socialmedialink.com',
+      'authkey': 'u89e4efd851e17e7'
     }, function(err, data) {
       if (err) {
         done(err);

@@ -1,3 +1,39 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="0" 
+            failures="0" 
+            tests="5"> 
+ 
+  <testsuite name="smoke.adminSettings" 
+    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0" 
+    tests="5" time="534.3" timestamp="Wed, 21 Feb 2018 15:28:14 GMT"> 
+   
+    <testcase name="signIn" classname="smoke.adminSettings" time="73.96" assertions="2"> 
+ 
+     
+ 
+     
+    </testcase> 
+   
+    <testcase name="addDataSet1" classname="smoke.adminSettings" time="141.0" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="addDataSet2" classname="smoke.adminSettings" time="232.1" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="addDataSet3" classname="smoke.adminSettings" time="77.93" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="saveSettings" classname="smoke.adminSettings" time="9.340" assertions="0"> 
+    </testcase> 
+   
+ 
+   
+ 
+   
+  </testsuite> 
+</testsuites> 
+=======
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
@@ -51,3 +87,4 @@
   
   </testsuite>
 </testsuites>
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683

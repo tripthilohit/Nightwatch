@@ -28,19 +28,19 @@
         "enabled" : false,
         "path" : ""
       },
-      "username": "tripthi.shetty@socialmedialink.com",
-      "access_key": "u283c7d7d4fafeb7",
+      "username": "sukada.ramakrishna@socialmedialink.com",
+      "access_key": "u89e4efd851e17e7",
       "desiredCapabilities": {
         "acceptSslCerts": "1",
-        "browserName": "Internet Explorer",
-        "version": "10",
+        "browserName": "Chrome",
+        "version": "63x64",
         "build": "1.0",
         "javascriptEnabled": "1",
         "name": "NightwatchJSExample",
-        "platform" : "Windows 7 64-bit",
+        "platform" : "Windows 10",
         "record_network" : "true",
         "record_video" : "true",
-        "screen_resolution" : "1024x768"
+        "screen_resolution" : "1366x768"
       }
     }
   }

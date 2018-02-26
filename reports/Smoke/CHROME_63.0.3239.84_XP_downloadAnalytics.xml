@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
+<<<<<<< HEAD
+<testsuites errors="13" 
+            failures="1" 
+            tests="7"> 
+ 
+  <testsuite name="smoke.downloadAnalytics" 
+    errors="13" failures="1" hostname="" id="" package="smoke" skipped="2" 
+    tests="7" time="226.8" timestamp="Thu, 15 Feb 2018 20:14:47 GMT"> 
+   
+    <testcase name="downloadImages" classname="smoke.downloadAnalytics" time="29.70" assertions="1"> 
+=======
 <testsuites errors="30" 
             failures="1" 
             tests="4"> 
@@ -8,15 +19,33 @@
     tests="4" time="180.6" timestamp="Tue, 13 Feb 2018 16:18:27 GMT"> 
    
     <testcase name="downloadImages" classname="smoke.downloadAnalytics" time="31.84" assertions="1"> 
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
  
      
     </testcase> 
    
+<<<<<<< HEAD
+    <testcase name="adminlogin" classname="smoke.downloadAnalytics" time="22.61" assertions="1"> 
+=======
     <testcase name="adminlogin" classname="smoke.downloadAnalytics" time="23.19" assertions="1"> 
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
  
      
     </testcase> 
    
+<<<<<<< HEAD
+    <testcase name="activityMonitoring" classname="smoke.downloadAnalytics" time="37.78" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="OverviewTab" classname="smoke.downloadAnalytics" time="6.729" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="downloadAnalytics" classname="smoke.downloadAnalytics" time="130.0" assertions="2"> 
+ 
+      <failure message="Timed out while waiting for element &lt;//ul[@id='ui-id-3']/li/a&gt; to be present for 2000 milliseconds.">    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:203:6)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+=======
     <testcase name="OverviewTab" classname="smoke.downloadAnalytics" time="7.463" assertions="0"> 
     </testcase> 
    
@@ -25,6 +54,7 @@
       <failure message="Timed out while waiting for element &lt;//ul[@id='ui-id-3']/li/a&gt; to be present for 2000 milliseconds.">    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:189:6)
     at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
     at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure> 
  
      
@@ -33,6 +63,150 @@
  
    
     <system-err> 
+<<<<<<< HEAD
+      ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[1]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:60:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[4]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:62:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[7]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:64:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[10]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:66:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[13]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:68:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[16]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:70:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[19]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:72:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[22]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:74:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[25]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:76:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[28]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:78:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[31]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:80:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;(//input[@ng-model='share.admin_feedback'])[34]&quot; using: xpath
+    at Object.activityMonitoring (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:82:4)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+ERROR: Unable to locate element: &quot;//td[@class='active day']/preceeding-sibling::td[@class='day'][1]&quot; using: xpath
+    at Object.downloadAnalytics (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:107:6)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+=======
       ERROR: Unable to locate element: &quot;//a[@class=' test-hub-nav-overview']&quot; using: xpath
     at Object.OverviewTab (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\downloadAnalytics.js:90:4)
     at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
@@ -362,10 +536,23 @@ ERROR: Unable to locate element: &quot;//input[@ng-model='shareId']&quot; using:
     at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
     at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
     at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
     at _combinedTickCallback (internal/process/next_tick.js:73:7) 
     </system-err> 
    
  
+   
+     
+    <testcase 
+      name="downloadAnalyticsPreviewButton" classname="smoke.downloadAnalytics"> 
+      <skipped /> 
+    </testcase> 
+     
+    <testcase 
+      name="downloadAnalyticsPreview" classname="smoke.downloadAnalytics"> 
+      <skipped /> 
+    </testcase> 
+     
    
   </testsuite> 
 </testsuites> 

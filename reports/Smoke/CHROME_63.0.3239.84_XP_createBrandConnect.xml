@@ -1,3 +1,37 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="0" 
+            failures="0" 
+            tests="5"> 
+ 
+  <testsuite name="smoke.createBrandConnect" 
+    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0" 
+    tests="5" time="129.7" timestamp="Wed, 21 Feb 2018 16:02:04 GMT"> 
+   
+    <testcase name="downloadImages" classname="smoke.createBrandConnect" time="34.48" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+    <testcase name="signIn" classname="smoke.createBrandConnect" time="22.78" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="firstSignin" classname="smoke.createBrandConnect" time="32.14" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="createBrandConnectTopic" classname="smoke.createBrandConnect" time="21.34" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="createBrandConnectDiscussion" classname="smoke.createBrandConnect" time="18.99" assertions="0"> 
+    </testcase> 
+   
+ 
+   
+ 
+   
+  </testsuite> 
+</testsuites> 
+=======
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="15"
             failures="0"
@@ -218,3 +252,4 @@ ERROR: Unable to locate element: &quot;(//button[@class='btn login themed-button
   
   </testsuite>
 </testsuites>
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683

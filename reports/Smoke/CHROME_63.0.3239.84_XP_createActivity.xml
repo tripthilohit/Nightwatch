@@ -1,4 +1,16 @@
 <<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="0" 
+            failures="0" 
+            tests="2"> 
+ 
+  <testsuite name="smoke.createActivity" 
+    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0" 
+    tests="2" time="451.5" timestamp="Wed, 21 Feb 2018 16:38:56 GMT"> 
+   
+    <testcase name="downloadImages" classname="smoke.createActivity" time="45.05" assertions="1"> 
+=======
+<<<<<<< HEAD
 
 <?xml version="1.0" encoding="UTF-8" ?> 
 <testsuites errors="14" 
@@ -10,10 +22,18 @@
     tests="2" time="443.7" timestamp="Fri, 09 Feb 2018 18:19:33 GMT"> 
    
     <testcase name="downloadImages" classname="smoke.createActivity" time="33.44" assertions="1"> 
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
  
      
     </testcase> 
    
+<<<<<<< HEAD
+    <testcase name="Creating an activity" classname="smoke.createActivity" time="406.4" assertions="3"> 
+ 
+     
+ 
+     
+=======
     <testcase name="Creating an activity" classname="smoke.createActivity" time="410.2" assertions="3"> 
  
      
@@ -22,12 +42,19 @@
     at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
     at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure> 
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
  
      
     </testcase> 
    
  
    
+<<<<<<< HEAD
+ 
+   
+  </testsuite> 
+</testsuites> 
+=======
     <system-err> 
       ERROR: Unable to locate element: &quot;//a[@class='mlogic-link test-hub-logic-item-view ng-scope']&quot; using: xpath
     at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:255:6)
@@ -229,3 +256,4 @@ ERROR: Unable to locate element: &quot;//button[@class='btn btn-default pull-rig
   </testsuite>
 </testsuites>
 >>>>>>> tests/tri_bc_regression1
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683

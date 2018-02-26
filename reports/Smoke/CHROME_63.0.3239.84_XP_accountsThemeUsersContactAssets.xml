@@ -1,96 +1,100 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="4"
-            failures="0"
-            tests="10">
-
-  <testsuite name="smoke.accountsThemeUsersContactAssets"
-    errors="4" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="10" time="545.1" timestamp="Fri, 09 Feb 2018 18:12:38 GMT">
-  
-    <testcase name="downloadImages" classname="smoke.accountsThemeUsersContactAssets" time="80.00" assertions="1">
-
-    
-    </testcase>
-  
-    <testcase name="signIn" classname="smoke.accountsThemeUsersContactAssets" time="21.04" assertions="1">
-
-    
-    </testcase>
-  
-    <testcase name="accounts" classname="smoke.accountsThemeUsersContactAssets" time="16.75" assertions="0">
-    </testcase>
-  
-    <testcase name="theme" classname="smoke.accountsThemeUsersContactAssets" time="35.94" assertions="0">
-    </testcase>
-  
-    <testcase name="users" classname="smoke.accountsThemeUsersContactAssets" time="22.85" assertions="0">
-    </testcase>
-  
-    <testcase name="confirmAdminusers" classname="smoke.accountsThemeUsersContactAssets" time="114.8" assertions="0">
-    </testcase>
-  
-    <testcase name="contactInfo" classname="smoke.accountsThemeUsersContactAssets" time="8.688" assertions="0">
-    </testcase>
-  
-    <testcase name="assets" classname="smoke.accountsThemeUsersContactAssets" time="64.48" assertions="0">
-    </testcase>
-  
-    <testcase name="verifyAdminLevelRestrictions" classname="smoke.accountsThemeUsersContactAssets" time="67.62" assertions="0">
-    </testcase>
-  
-    <testcase name="memberSideVerify" classname="smoke.accountsThemeUsersContactAssets" time="112.9" assertions="0">
-    </testcase>
-  
-
-  
-    <system-err>
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="4" 
+            failures="0" 
+            tests="10"> 
+ 
+  <testsuite name="smoke.accountsThemeUsersContactAssets" 
+    errors="4" failures="0" hostname="" id="" package="smoke" skipped="0" 
+    tests="10" time="667.2" timestamp="Wed, 21 Feb 2018 15:49:08 GMT"> 
+   
+    <testcase name="downloadImages" classname="smoke.accountsThemeUsersContactAssets" time="130.3" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+    <testcase name="signIn" classname="smoke.accountsThemeUsersContactAssets" time="26.83" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+    <testcase name="accounts" classname="smoke.accountsThemeUsersContactAssets" time="24.58" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="theme" classname="smoke.accountsThemeUsersContactAssets" time="63.58" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="users" classname="smoke.accountsThemeUsersContactAssets" time="30.14" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="confirmAdminusers" classname="smoke.accountsThemeUsersContactAssets" time="126.0" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="contactInfo" classname="smoke.accountsThemeUsersContactAssets" time="10.93" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="assets" classname="smoke.accountsThemeUsersContactAssets" time="74.27" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="verifyAdminLevelRestrictions" classname="smoke.accountsThemeUsersContactAssets" time="77.00" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="memberSideVerify" classname="smoke.accountsThemeUsersContactAssets" time="103.6" assertions="0"> 
+    </testcase> 
+   
+ 
+   
+    <system-err> 
       ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[1]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:288:6)
-    at Module.call (/Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+    at Object.assets (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\accountsThemeUsersContactAssets.js:291:6)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[2]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:299:6)
-    at Module.call (/Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+    at Object.assets (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\accountsThemeUsersContactAssets.js:302:6)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[3]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:310:6)
-    at Module.call (/Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+    at Object.assets (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\accountsThemeUsersContactAssets.js:313:6)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[4]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:321:6)
-    at Module.call (/Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/Tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
-    </system-err>
-  
-
-  
-  </testsuite>
-</testsuites>
+    at Object.assets (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\accountsThemeUsersContactAssets.js:324:6)
+    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
+    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
+    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
+    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:73:7)
+    at process._tickCallback (internal/process/next_tick.js:104:9) 
+    </system-err> 
+   
+ 
+   
+  </testsuite> 
+</testsuites> 

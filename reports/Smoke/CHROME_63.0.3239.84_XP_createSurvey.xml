@@ -1,3 +1,38 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8" ?> 
+<testsuites errors="0" 
+            failures="0" 
+            tests="4"> 
+ 
+  <testsuite name="smoke.createSurvey" 
+    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0" 
+    tests="4" time="258.6" timestamp="Wed, 21 Feb 2018 16:05:24 GMT"> 
+   
+    <testcase name="downloadImages" classname="smoke.createSurvey" time="41.48" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+    <testcase name="signIn" classname="smoke.createSurvey" time="18.34" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="clickAdminLinks" classname="smoke.createSurvey" time="171.6" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+    <testcase name="missionLogic" classname="smoke.createSurvey" time="27.23" assertions="1"> 
+ 
+     
+    </testcase> 
+   
+ 
+   
+ 
+   
+  </testsuite> 
+</testsuites> 
+=======
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
             failures="0"
@@ -48,3 +83,4 @@
   
   </testsuite>
 </testsuites>
+>>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
