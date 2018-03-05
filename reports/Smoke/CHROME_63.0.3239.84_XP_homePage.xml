@@ -1,35 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="1"
             failures="0"
-            tests="4">
+            tests="2">
 
-  <testsuite name="smoke.createSurvey"
+  <testsuite name="smoke.homePage"
     errors="1" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="4" time="233.6" timestamp="Wed, 28 Feb 2018 21:15:16 GMT">
+    tests="2" time="26.73" timestamp="Mon, 05 Mar 2018 21:56:33 GMT">
   
-    <testcase name="downloadImages" classname="smoke.createSurvey" time="36.52" assertions="1">
-
-    
+    <testcase name="signInAdmin" classname="smoke.homePage" time="26.73" assertions="0">
     </testcase>
   
-    <testcase name="signIn" classname="smoke.createSurvey" time="21.79" assertions="0">
-    </testcase>
-  
-    <testcase name="clickAdminLinks" classname="smoke.createSurvey" time="147.7" assertions="1">
-
-    
-    </testcase>
-  
-    <testcase name="missionLogic" classname="smoke.createSurvey" time="27.58" assertions="1">
-
-    
+    <testcase name="homepageTemplate1" classname="smoke.homePage" time="0.005000" assertions="0">
     </testcase>
   
 
   
     <system-err>
-      ERROR: Unable to locate element: &quot;//td[@class='active day']/preceding-sibling::td[@class='day'][1]&quot; using: xpath
-    at Object.missionLogic (/Users/tripthi/Desktop/Nightwatch/tests/smoke/createSurvey.js:271:6)
+        Error while running [Smoke / Home Page / homepageTemplate1]:
+
+  TypeError: driver.useXpath(...).click(...).pause(...).click(...).pause(...).click(...).pause(...).click(...).pause(...).setValue(...).pause(...).click(...).pause(...).setValue(...).pause(...).exceute is not a function
+    at Object.homepageTemplate1 (/Users/tripthi/Desktop/Nightwatch/tests/smoke/homePage.js:27:3)
     at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)

@@ -59,7 +59,7 @@ var createGroupMale = function(driver)
     .pause(2000)
 
 }
-var createList = function(driver)
+var createListUploadingCSV = function(driver)
 {
     driver
     .useXpath()
@@ -140,7 +140,6 @@ var createGroupExcludeState = function(driver)
     //click members
     .click("//a[@class='test-nav-members']")
     .pause(4000)
-
 }
 var createGroupCanada = function(driver)
 {
@@ -180,7 +179,7 @@ var createGroupCanada = function(driver)
     .click("//a[@class='test-nav-members']")
     .pause(4000)
 }
-var segmentBySurveyAnswers = function(driver)
+var segmentBySurveyQualifications = function(driver)
 {
     driver
     .useXpath()
@@ -194,19 +193,191 @@ var segmentBySurveyAnswers = function(driver)
     //edit name of the group
     .clearValue("//input[@ng-show='isEdit']")
     .pause(500)
-    .setValue("//input[@ng-show='isEdit']","Segment by survey answers group")
+    .setValue("//input[@ng-show='isEdit']","Segment by survey qualification")
     .pause(1000)
     //scroll to the bottom
     .execute('scrollTo(3000,3000)')
+    //add condition
     .click("//a[@class='sl-btn-select-answer test-group-condition-add']")
     .pause(1000)
-    
+    //choose survey mission hub
+    .click("//li[contains(text(), 'Survey smoke')]")
+    .pause(500)
+    //choose survey name
+    .click("//li[contains(text(), 'survey smoke name')]")
+    .pause(500)
+    //choose select
+    .click("//button[@class='btn btn-default test-group-past-add-save']")
+    .pause(1000)
+    //click accepted radio option
+    .click("//label[@for='radio_survey_result_0_accepted']")
+    .pause(1000)
+    //click done
+    .click("//button[@class='btn btn-primary test-group-past-edit-save']")
+    .pause(1000)
+    //scroll to the top
+    .execute('scrollTo(0,0)')
+    .click("//a[@class='btn btn-default test-group-save']")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/createGroupSegmentBySurveyQualifications.png')
+    .pause(4000)
+}
+var segmentBySurveyPastAnswers = function(driver)
+{
+    driver
+    .useXpath()
+    //click groups and lists
+    .click("//a[@class='test-nav-groups']")
+    .pause(4000)
+    //click add group
+    .click("//a[@class='btn btn-default btn-icon-add test-group-add']")
+    .pause(4000)
+    .click("//button[@class='btn-edit']")
+    .pause(2000)
+    //edit name of the group
+    .clearValue("//input[@ng-show='isEdit']")
+    .pause(500)
+    .setValue("//input[@ng-show='isEdit']","Segment by survey past answers")
+    .pause(1000)
+    //scroll to the bottom
+    .execute('scrollTo(3000,3000)')
+    //add condition
+    .click("//a[@class='sl-btn-select-answer test-group-condition-add']")
+    .pause(1000)
+    //choose survey mission hub
+    .click("//li[contains(text(), 'Survey smoke')]")
+    .pause(500)
+    //choose survey name
+    .click("//li[contains(text(), 'survey smoke name')]")
+    .pause(500)
+    //choose select
+    .click("//button[@class='btn btn-default test-group-past-add-save']")
+    .pause(1000)
+    .execute('scrollTo(1000,1000)')
+    .pause(2000)
+    //click answers tab
+    .click("//button[contains(text(), 'Answers')]")
+    .pause(1000)
+    //click question 1's answer options
+    .click("//button[contains(text(), 'answer 1')]")
+    .pause(1000)
+    //choose option 2
+    .click("(//ul[@class='inline-select-menu'])[3]/li[2]")
+    .pause(1000)
+    //click done
+    .click("//button[@class='btn btn-primary test-group-past-edit-save']")
+    .pause(1000)
+    //scroll to the top
+    .execute('scrollTo(0,0)')
+    .click("//a[@class='btn btn-default test-group-save']")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/createGroupSegmentBySurveyPastAnswers.png')
+    .pause(4000)
+}
+
+var splitLists = function(driver)
+{
+    driver
+    .useXpath()
+    //click groups and lists
+    .click("//a[@class='test-nav-groups']")
+    .pause(4000)
+    //click a list
+    .click("//a[@class='test-groups-item-link ng-binding'][contains(text(),'Test list upload')]")
+    .pause(3000)
+    //click create lists to split
+    .click("//a[@class='btn btn-default btn-icon-add']")
+    .pause(2000)
+    //click ok to split into 2
+    .click("//div[@class='ng-binding']")
+    .pause(5000)
+   // .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/splitListBeforeRefresh.png')
+    //.pause(4000)
+    //.url("https://admin.staging.socialmedialink.com/members_groups")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/splitListAfterRefresh.png')
+    .pause(10000)
+
+}
+var splitGroup = function(driver)
+{
+    driver
+    .useXpath()
+    .url("https://admin.staging.socialmedialink.com")
+    .pause(3000)
+    //click groups and lists
+    .click("//a[@class='test-nav-groups']")
+    .pause(4000)
+    //.execute('scrollTo(5000,5000)')
+    //click a list
+    .click("//a[@class='test-groups-item-link ng-binding'][contains(text(),'Male')]")
+    .pause(4000)
+    //click create lists to split
+    .click("//a[@class='btn btn-default btn-icon-add']")
+    .pause(2000)
+    //click ok to split into 2
+    .click("//div[@class='ng-binding']")
+    .pause(5000)
+   // .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/splitListBeforeRefresh.png')
+    //.pause(4000)
+    //.url("https://admin.staging.socialmedialink.com/members_groups")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/splitListAfterRefresh.png')
+    .pause(4000)
+}
+var createListAddMembers = function(driver)
+{
+    driver
+    .useXpath()
+    .url("https://admin.staging.socialmedialink.com")
+    //click groups
+    .click("//a[@class='test-nav-groups']")
+    .pause(4000)
+    //click add list
+    .click("//a[@class='btn btn-default btn-icon-add']")
+    .pause(4000)
+    //click edit to change name
+    .click("//button[@class='btn-edit']")
+    .pause(2000)
+    //edit name of the list
+    .clearValue("//input[@ng-show='isEdit']")
+    .pause(500)
+    .setValue("//input[@ng-show='isEdit']","Test list by adding members")
+    .pause(1000)
+    .keys(driver.Keys.ENTER)
+    .pause(1000)
+    //click add members
+    .click("//a[contains(text(),'Add members')]")
+    .pause(2000)
+    //add member 1
+    .click("(//label[@class='control-checkbox'])[1]")
+    .pause(1000)
+    //add member 2
+    .click("(//label[@class='control-checkbox'])[2]")
+    .pause(1000)
+    //add member 3
+    .click("(//label[@class='control-checkbox'])[3]")
+    .pause(1000)
+    .click("//a[@class='btn btn-default']")
+    .pause(1000)
+    //click groups
+    .click("//a[@class='test-nav-groups']")
+    .pause(4000)
+    .click("//a[contains(text(),'Test list by adding members')]")
+    .pause(2000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/createListAddMembers.png')
+    .pause(2000)
 }
 module.exports = {
-    //downloadList: downloadList,
+    downloadList: downloadList,
     signinEmail: signinEmail,
-    //createGroupMale: createGroupMale,
-    //createList: createList,
-    //createGroupExcludeState: createGroupExcludeState,
-    createGroupCanada: createGroupCanada
+   createGroupMale: createGroupMale,
+   createListUploadingCSV: createListUploadingCSV,
+    createGroupExcludeState: createGroupExcludeState,
+    createGroupCanada: createGroupCanada,
+    segmentBySurveyQualifications: segmentBySurveyQualifications,
+    segmentBySurveyPastAnswers: segmentBySurveyPastAnswers,
+    splitLists: splitLists,
+    splitGroup: splitGroup,
+    createListAddMembers: createListAddMembers
 }
