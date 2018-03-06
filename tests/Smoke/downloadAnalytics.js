@@ -44,8 +44,8 @@ var adminlogin =  function(driver)
     .pause(2000)
     .assert.containsText("//a[@class='test-nav-hubs']", "Mission Hub")
     //click Activity
-    .click("(//a[@class='rowclick test-hub-link ng-binding'])[2]")
-    .pause(2000)
+   .click("//a[@class='rowclick test-hub-link ng-binding'][text()='Sharing Tools']")
+   .pause(2000)
 
   }
   
@@ -199,8 +199,7 @@ var downloadAnalytics = function(driver)
     .click("//input[@ng-model='shareId']")
     .pause(2000)
     .setValue("//input[@ng-model='shareId']",driver.globals.userNames.uin)
-    .pause(2000)
-    .waitForElementVisible("//ul[@id='ui-id-3']/li/a",2000)
+    //.waitForElementVisible("//ul[@id='ui-id-3']/li/a",2000)
     .moveToElement("//ul[@id='ui-id-3']/li/a",1,1)
     .pause(2000)
     .mouseButtonClick(1)

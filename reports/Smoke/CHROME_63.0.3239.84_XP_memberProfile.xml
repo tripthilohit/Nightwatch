@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
 <testsuites errors="0" 
             failures="0" 
-            tests="1"> 
+            tests="4"> 
  
-  <testsuite name="smoke.memberProfile" 
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0" 
-    tests="1" time="37.40" timestamp="Fri, 23 Feb 2018 16:47:48 GMT"> 
+  <testsuite name="Smoke.memberProfile" 
+    errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0" 
+    tests="4" time="120.8" timestamp="Tue, 06 Mar 2018 15:04:50 GMT"> 
    
-    <testcase name="signinEmail" classname="smoke.memberProfile" time="37.40" assertions="0"> 
+    <testcase name="signinEmail" classname="Smoke.memberProfile" time="41.70" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="memberProfilePage" classname="Smoke.memberProfile" time="20.48" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="memberChangePassword" classname="Smoke.memberProfile" time="37.53" assertions="0"> 
+    </testcase> 
+   
+    <testcase name="memberSigninNewPassword" classname="Smoke.memberProfile" time="21.14" assertions="0"> 
     </testcase> 
    
  

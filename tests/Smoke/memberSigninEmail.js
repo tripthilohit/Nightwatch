@@ -32,6 +32,5 @@ module.exports = {
     signinEmail: signinEmail
 
 
-module.exports = {
-    signinEmail: signinEmail
+
 }
