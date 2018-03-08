@@ -1,12 +1,15 @@
 var userNames = {
   
   memberURL: 'https://suksprint95.socialmedialink.com/',
-  memberEmail: 'sukrao10@yopmail.com',
-  memberPassword: '12345678',
+  memberEmail: 'sunny@yopmail.com',
+  memberPassword: 'general1234',
   memberFirstName: 'first',
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
+  member2Email:'sukada.testmember9@socialmedialink.com',
+  member2Password:'general1234',
+
 
   sprint: '96a',
   adminURL: 'https://admin-smiley.socialmedialink.com/',
@@ -14,8 +17,12 @@ var userNames = {
   adminPassword: 'General123$',
   facebookEmail: 'sukada.testmember8@socialmedialink.com',
   facebookPass: 'general1234',
+  facebookEmail2: 'vcsjinc_martinazziescu_1454599736@tfbnw.net ',
+  facebookPass2: 'general1234',
   twitterEmail: 'sukada.ramakrishna@socialmedialink.com',
   twitterPass: 'general1234',
+  twitterEmail2: 'tripthi.testmember20@socialmedialink.com',
+  twitterPass2: 'general1234',
   instagramUserName: 'sukadar',
   instagramPass: 'general1234',
   superAdminEmail: 'sukada.ramakrishna@socialmedialink.com',
@@ -32,8 +39,9 @@ var userNames = {
   caAddressLine2:'EASY ST',
   caCity:'OTTAWA',
   postalCode:'K1A 0B1',
-  memberNewEmail: 'sukrao10@yopmail.com',
-  memberNewPassword:'general1234',
+  memberNewEmail: 'sukrao17@yopmail.com',
+  memberNewPassword:'12345678',
+
 
 
 

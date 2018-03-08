@@ -1,23 +1,24 @@
 var downloadImages = function(driver)
 {
     driver
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .waitForElementVisible('body', 1000)
-    .useXpath()
-    //download activity badge
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("(//div[@class='grid '])[1]/div[2]/div[1]")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@data-ga-action='Download']")
-    .pause(4000)
+.url("https://burst.shopify.com/")
+.pause(3000)
+.waitForElementVisible('body', 1000)
+.useXpath()
+//download activity badge
+.pause(2000)
+.setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
+.pause(1000)
+.keys(driver.Keys.ENTER)
+.pause(3000)
+.click("//img[@alt='blue beach waves']")
+.pause(2000)
+.click("//label[@for='photo_download_quality_standard']")
+.pause(2000)
+.click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
+.pause(4000)
 }
+
 
 var modulememberSigninEmail = require('./memberSigninEmail.js')
 //Navigate to member profile from Dashboard
@@ -43,12 +44,12 @@ var generalInfo = function(driver)
 
 // Upload pic using FB profile( make sure Single click sharing app is been deleted from you FB profile)
 .click("(//a[@class='btn btn-facebook-connect btn-md2 btn-block'])[1]")
+.pause(2000)
 .click("//input[@id='email']")
-.clearValue("//input[@id='email']")
 .pause(2000)
 .setValue("//input[@id='email']", driver.globals.userNames.facebookEmail)
+.pause(2000)
 .click("//input[@id='pass']")
-.clearValue("//input[@id='pass']")
 .pause(2000)
 .setValue("//input[@id='pass']", driver.globals.userNames.facebookPass)
 .pause(2000)
@@ -68,22 +69,23 @@ var generalInfo = function(driver)
 .click("(//a[@class='btn btn-twitter-connect btn-md2 btn-block'])[1]")
 .pause(2000)
 .click("//input[@id='username_or_email']")
-.clearValue("//input[@id='username_or_email']")
 .pause(2000)
 .setValue("//input[@id='username_or_email']", driver.globals.userNames.twitterEmail)
+.pause(2000)
 .click("//input[@id='password']")
-.clearValue("//input[@id='password']")
 .pause(2000)
 .setValue("//input[@id='password']", driver.globals.userNames.twitterPass)
 .pause(2000)
 .click("//input[@value='Sign In']")
 .pause(4000)
+.execute('scrollTo(200,0)')
 .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyMemberProfileimage1.png')
 .pause(2000)
 //upload photo using "Browse" button
-.setValue("(//div[@class='btn btn-upload btn-primary'])[1]/input",driver.globals.userNames.path + "beach-pals_925x.jpg")
+.execute('scrollTo(200,0)')
+.setValue("//div[@class='btn btn-color profile-upload-btn']/input[1]",driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
 .pause(3000) 
-//About field
+//About fie
 .click("//textarea[@id='member_about']")
 .pause(2000)
 .setValue("//textarea[@id='member_about']", 'Blogger, Mother, wife and a homemaker')
@@ -238,14 +240,14 @@ var shippingInfoCa = function(driver)
 .pause(2000)
 .clearValue("(//div[@class='form-group'])[28]/input")
 .pause(2000)
-.setValue("(//div[@class='form-group'])[28]/input",driver.globals.userNames.caAddressLine2)
+.setValue("(//div[@class='form-group'])[28]/input",driver.globals.userNames.caCity)
 .pause(2000)
 //city -Canada
 .click("(//div[@class='form-group'])[27]/input")
 .pause(2000)
 .clearValue("(//div[@class='form-group'])[27]/input")
 .pause(2000)
-.setValue("(//div[@class='form-group'])[27]/input",driver.globals.userNames.caCity)
+.setValue("(//div[@class='form-group'])[27]/input",driver.globals.userNames.caAddressLine2)
 .pause(2000)
 //Province
 .click("//div[@class='form-group js-state']/select/option[9]")
@@ -283,14 +285,14 @@ var shippingInfoUs = function(driver)
 .pause(2000)
 .clearValue("(//div[@class='form-group'])[28]/input")
 .pause(2000)
-.setValue("(//div[@class='form-group'])[28]/input",driver.globals.userNames.usAddressLine2)
+.setValue("(//div[@class='form-group'])[28]/input",driver.globals.userNames.usCity)
 .pause(2000)
 //city -USA
 .click("(//div[@class='form-group'])[27]/input")
 .pause(2000)
 .clearValue("(//div[@class='form-group'])[27]/input")
 .pause(2000)
-.setValue("(//div[@class='form-group'])[27]/input",driver.globals.userNames.usCity)
+.setValue("(//div[@class='form-group'])[27]/input",driver.globals.userNames.usAddressLine2)
 .pause(2000)
 //state
 .click("//div[@class='form-group js-state']/select/option[37]")
@@ -306,6 +308,17 @@ var shippingInfoUs = function(driver)
 .click("(//input[@name='commit'])[3]")
 .pause(2000)
 .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyMemberProfileUsAddress.png')
+.pause(2000)
+
+}
+
+var memberHistory = function(driver)
+{
+  driver
+.useXpath()
+.click("//div[@class='profile-bar hidden-xs affix']/ul/li[6]/a")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyMemberProfileHistory.png')
 .pause(2000)
 
 }
@@ -348,7 +361,7 @@ var emailAndPassword = function(driver)
 .pause(2000)
 }
 
-//Navigate to member Profile page - by calling the module under module ecports
+//Navigate to member Profile page - by calling the module under module exports
 
 var memberChangePassword = function(driver)
 {
@@ -392,7 +405,7 @@ var memberSigninNewPassword = function(driver)
 .pause(1000)
 .click("//div[@class='desktop-container ng-scope']/div/form/div[1]/input")
 .pause(1000)
-.setValue('//div[@class="desktop-container ng-scope"]/div/form/div[1]/input', driver.globals.userNames.memberNewEmail)
+.setValue('//div[@class="desktop-container ng-scope"]/div/form/div[1]/input', driver.globals.userNames.memberEmail)
 .pause(1000)
 .click("//div[@class='desktop-container ng-scope']/div/form/div[2]/input")
 .pause(1000)
@@ -400,26 +413,174 @@ var memberSigninNewPassword = function(driver)
 .pause(1000)
 .click("//div[@class='desktop-container ng-scope']/div/form/button")
 .pause(4000)
-.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/siginNewMemberConfirm.png')
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyMemberProfileNewMemberConfirm.png')
 .pause(2000)
 }
 
 var deactivateAccount = function(driver)
 {
   driver
+.useXpath()
+.click("//c-deactivate-prompt[@class='ng-isolate-scope']")
+.pause(2000)
+.window_handles(function(result) {
+ var handle = result.value[1];
+ this.switchWindow(handle);})
+.pause(2000)
+.click("(//div[@class='ng-scope'])[18]/label")
+.pause(2000)
+.click("(//div[@class='modal-footer'])[2]/a")
+.pause(2000)
+.window_handles(function(result) {
+ var handle = result.value[1];
+ this.switchWindow(handle);})
+.click("(//div[@class='modal-footer'])[2]/a")
+.pause(2000)
+//signin to check the member is deactivated
+.click("(//a[contains(text(), 'Login')])[2]")
+.pause(1000)
+.click("(//div[contains(text(), 'Email')])[6]")
+.pause(1000)
+.click("//div[@class='desktop-container ng-scope']/div/form/div[1]/input")
+.pause(1000)
+.setValue('//div[@class="desktop-container ng-scope"]/div/form/div[1]/input', driver.globals.userNames.memberEmail)
+.pause(1000)
+.click("//div[@class='desktop-container ng-scope']/div/form/div[2]/input")
+.pause(1000)
+.setValue("//div[@class='desktop-container ng-scope']/div/form/div[2]/input", driver.globals.userNames.memberNewPassword)
+.pause(1000)
+.click("//div[@class='desktop-container ng-scope']/div/form/button")
+.pause(4000)
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyMemberProfileDeactivatedMember.png')
+.pause(2000)
 
+}
+
+
+var modulecreateSurvey=require('./createSurvey.js')
+
+var adminMembers = function(driver)
+{
+  driver
+.useXpath()
+.click("//ul[@class='navbar-nav']/li[3]")
+.pause(2000)
+.click("//div[@class='dropdown-select ng-pristine ng-valid']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[4]")
+.pause(2000)
+.click("//div[@class='ng-scope']/input")
+.pause(2000)
+.setValue("//div[@class='ng-scope']/input", driver.globals.userNames.memberEmail)
+.pause(2000)
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.click("//tr[@class='row-click test-members-item-0 table-members-inactive']/td[2]/a")
+.pause(2000)
+.click("//div[@class='tabs-buttons']/button")
+.pause(2000)
+.window_handles(function(result) {
+ var handle = result.value[1];
+ this.switchWindow(handle);})
+.pause(2000)
+.click("//nav[@class='alertify-buttons']/button[1]")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminActivatedMember1.png')
+.pause(2000)
+
+}
+
+var signinmember2Email = function(driver)
+  {
+    driver
+.url(driver.globals.userNames.memberURL)
+.windowMaximize("current")
+//.waitForElementVisible('body', 2000)
+.useXpath()
+.click("(//a[contains(text(), 'Login')])[2]")
+.pause(1000)
+.click("(//div[contains(text(), 'Email')])[6]")
+.pause(1000)
+.click("//div[@class='desktop-container ng-scope']/div/form/div[1]/input")
+.pause(1000)
+.setValue('//div[@class="desktop-container ng-scope"]/div/form/div[1]/input', driver.globals.userNames.member2Email)
+.pause(1000)
+.click("//div[@class='desktop-container ng-scope']/div/form/div[2]/input")
+.pause(1000)
+.setValue("//div[@class='desktop-container ng-scope']/div/form/div[2]/input", driver.globals.userNames.member2Password)
+.pause(1000)
+.click("//div[@class='desktop-container ng-scope']/div/form/button")
+.pause(4000)
+//.assert.containsText("//div[@class='content-offer js-content-offer']/h1", 'Offers for You')
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/siginConfirm2.png')
+.pause(2000)
+}
+// Call member profile page in module exports.
+var connectFbAndTw = function(driver)
+  {
+    driver
+//connect to Facebook
+.click("(//a[@class='btn btn-facebook-connect btn-md2 btn-block'])[2]")
+.pause(2000)
+.click("//input[@id='email']")
+.pause(2000)
+.setValue("//input[@id='email']", driver.globals.userNames.facebookEmail2)
+.pause(2000)
+.click("//input[@id='pass']")
+.pause(2000)
+.setValue("//input[@id='pass']", driver.globals.userNames.facebookPass2)
+.pause(2000)
+.click("//button[@value='1']")
+.pause(4000)
+.keys(driver.Keys.ENTER)
+.pause(3000)
+.keys(driver.Keys.ENTER)
+.pause(3000)
+.keys(driver.Keys.ENTER)
+.pause(4000)
+.execute('scrollTo(200,0)')
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyMemberProfileConnectFbimage.png')
+.pause(2000)
+//connect to Twitter
+.click("(//a[@class='btn btn-twitter-connect btn-md2 btn-block'])[2]")
+.pause(2000)
+.click("//input[@id='username_or_email']")
+.pause(2000)
+.setValue("//input[@id='username_or_email']", driver.globals.userNames.twitterEmail2)
+.pause(2000)
+.click("//input[@id='password']")
+.pause(2000)
+.setValue("//input[@id='password']", driver.globals.userNames.twitterPass2)
+.pause(2000)
+.click("//input[@value='Sign In']")
+.pause(4000)
+.execute('scrollTo(200,0)')
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyMemberProfileConnectTwimage1.png')
+.pause(2000)
 }
 
 module.exports={
 //downloadImages: downloadImages,
-signinEmail: modulememberSigninEmail.signinEmail, 
+//signinEmail: modulememberSigninEmail.signinEmail, 
 //memberProfilePage: memberProfilePage,
-//generalInfo: generalInfo
-//personalInfo: personalInfo
+//generalInfo: generalInfo,
+//personalInfo: personalInfo,
 //shippingInfoCa: shippingInfoCa,
 //shippingInfoUs: shippingInfoUs,
+//memberHistory:memberHistory,
+//memberChangePassword: memberChangePassword,
+//memberSigninNewPassword: memberSigninNewPassword,
+//memberProfilePage1: memberProfilePage,
+//deactivateAccount: deactivateAccount,
+//signIn: modulecreateSurvey.signIn,
+//adminMembers: adminMembers,
+//signinEmail: modulememberSigninEmail.signinEmail, 
+//memberProfilePage: memberProfilePage,
 //emailAndPassword: emailAndPassword,
-memberProfilePage: memberProfilePage,
-memberChangePassword: memberChangePassword,
-memberSigninNewPassword: memberSigninNewPassword
+signinmember2Email: signinmember2Email,
+memberProfilePage2: memberProfilePage,
+connectFbAndTw: connectFbAndTw,
 }
