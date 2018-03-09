@@ -1,103 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?> 
-<testsuites errors="7" 
+<testsuites errors="1" 
             failures="0" 
-            tests="4"> 
+            tests="3"> 
  
   <testsuite name="Smoke.memberProfile" 
-    errors="7" failures="0" hostname="" id="" package="Smoke" skipped="0" 
-    tests="4" time="311.4" timestamp="Wed, 07 Mar 2018 14:52:11 GMT"> 
+    errors="1" failures="0" hostname="" id="" package="Smoke" skipped="0" 
+    tests="3" time="185.1" timestamp="Fri, 09 Mar 2018 19:08:05 GMT"> 
    
-    <testcase name="downloadImages" classname="Smoke.memberProfile" time="76.53" assertions="1"> 
+    <testcase name="SigningEmail2" classname="Smoke.memberProfile" time="99.94" assertions="1"> 
  
      
     </testcase> 
    
-    <testcase name="signinEmail" classname="Smoke.memberProfile" time="66.88" assertions="0"> 
+    <testcase name="memberProfilePage2" classname="Smoke.memberProfile" time="10.60" assertions="0"> 
     </testcase> 
    
-    <testcase name="memberProfilePage" classname="Smoke.memberProfile" time="19.40" assertions="0"> 
-    </testcase> 
-   
-    <testcase name="generalInfo" classname="Smoke.memberProfile" time="148.6" assertions="0"> 
+    <testcase name="connectFbAndTw" classname="Smoke.memberProfile" time="74.54" assertions="0"> 
     </testcase> 
    
  
    
     <system-err> 
-      ERROR: Unable to locate element: &quot;//a[@class='btn btn-instagram-connect btn-md2 btn-block']&quot; using: xpath
-    at Object.generalInfo (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\memberProfile.js:121:2)
-    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-ERROR: Unable to locate element: &quot;//input[@id='id_username']&quot; using: xpath
-    at Object.generalInfo (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\memberProfile.js:123:2)
-    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-ERROR: Unable to locate element: &quot;//input[@id='id_username']&quot; using: xpath
-    at Object.generalInfo (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\memberProfile.js:125:2)
-    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-ERROR: Unable to locate element: &quot;//input[@id='id_password']&quot; using: xpath
-    at Object.generalInfo (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\memberProfile.js:127:2)
-    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-ERROR: Unable to locate element: &quot;//input[@id='id_password']&quot; using: xpath
-    at Object.generalInfo (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\memberProfile.js:129:2)
-    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-ERROR: Unable to locate element: &quot;//input[@id='id_password']&quot; using: xpath
-    at Object.generalInfo (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\memberProfile.js:131:2)
-    at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-    at process._tickCallback (internal/process/next_tick.js:104:9)
-ERROR: Unable to locate element: &quot;//input[@value='Authorize']&quot; using: xpath
-    at Object.generalInfo (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\memberProfile.js:135:2)
+      ERROR: Unable to locate element: &quot;//div[@class='text-center']/a&quot; using: xpath
+    at Object.connectFbAndTw (C:\Users\Sukad\Desktop\Nightwatch\tests\Smoke\memberProfile.js:625:2)
     at Module.call (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
     at C:\Users\Sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
     at _fulfilled (C:\Users\Sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)

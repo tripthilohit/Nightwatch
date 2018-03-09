@@ -1,259 +1,29 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" ?> 
 <testsuites errors="0" 
             failures="0" 
             tests="2"> 
  
-  <testsuite name="smoke.createActivity" 
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0" 
-    tests="2" time="451.5" timestamp="Wed, 21 Feb 2018 16:38:56 GMT"> 
+  <testsuite name="Smoke.createActivity" 
+    errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0" 
+    tests="2" time="496.8" timestamp="Thu, 08 Mar 2018 21:56:43 GMT"> 
    
-    <testcase name="downloadImages" classname="smoke.createActivity" time="45.05" assertions="1"> 
-=======
-<<<<<<< HEAD
-
-<?xml version="1.0" encoding="UTF-8" ?> 
-<testsuites errors="14" 
-            failures="1" 
-            tests="2"> 
- 
-  <testsuite name="smoke.createActivity" 
-    errors="14" failures="1" hostname="" id="" package="smoke" skipped="0" 
-    tests="2" time="443.7" timestamp="Fri, 09 Feb 2018 18:19:33 GMT"> 
-   
-    <testcase name="downloadImages" classname="smoke.createActivity" time="33.44" assertions="1"> 
->>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
+    <testcase name="downloadImages" classname="Smoke.createActivity" time="49.33" assertions="1"> 
  
      
     </testcase> 
    
-<<<<<<< HEAD
-    <testcase name="Creating an activity" classname="smoke.createActivity" time="406.4" assertions="3"> 
+    <testcase name="Creating an activity" classname="Smoke.createActivity" time="447.5" assertions="3"> 
  
      
  
      
-=======
-    <testcase name="Creating an activity" classname="smoke.createActivity" time="410.2" assertions="3"> 
- 
-     
- 
-      <failure message="Testing if element &lt;//button[@class='btn btn-default pull-right test-hub-logic-save']&gt; is visible. Element could not be located.">    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:284:13)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)</failure> 
->>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
  
      
     </testcase> 
    
  
    
-<<<<<<< HEAD
  
    
   </testsuite> 
 </testsuites> 
-=======
-    <system-err> 
-      ERROR: Unable to locate element: &quot;//a[@class='mlogic-link test-hub-logic-item-view ng-scope']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:255:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//input[@id='date-start']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:259:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//td[@class='active day']/preceding-sibling::td[@class='day'][1]&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:261:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//button[@class='mlogic-add-group']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:263:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//span[text()='All Members']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:265:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//button[@class='btn btn-primary test-hub-logic-item-group-save']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:267:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;(//span[@class='control-checkbox control-checkbox-dark'])[1]&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:269:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;(//label[@class='control-checkbox control-checkbox-primary'])[1]&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:271:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;(//label[@class='control-checkbox control-checkbox-primary'])[2]&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:273:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//input[@class='form-control ng-pristine ng-valid ng-valid-number']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:275:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//input[@class='form-control ng-pristine ng-valid ng-valid-number']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:277:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//label[@class='switcher ng-scope']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:279:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//button[@class='btn btn-default pull-right test-hub-logic-save']&quot; using: xpath
-    at Object.Creating an activity (C:\Users\Sukad\Desktop\Nightwatch\tests\smoke\createActivity.js:281:6)
-    at Module.call (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\module.js:62:34)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\runner\testcase.js:70:29
-    at _fulfilled (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:834:54)
-    at self.promiseDispatch.done (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:863:30)
-    at Promise.promise.promiseDispatch (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:796:13)
-    at C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:556:49
-    at runSingle (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:137:13)
-    at flush (C:\Users\sukad\Desktop\Nightwatch\nightwatch\node_modules\q\q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:73:7)
-ERROR: Unable to locate element: &quot;//button[@class='btn btn-default pull-right test-hub-logic-save']&quot; using: xpath
-    at command (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\api\assertions\visible.js:42:21)
-    at module.exports.BaseAssertion._scheduleAssertion (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\assertion.js:87:17)
-    at module.exports.BaseAssertion._executeCommand (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\assertion.js:82:17)
-    at AssertionInstance.commandFn [as _commandFn] (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\assertion.js:180:21)
-    at AsyncTree.runCommand (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:154:30)
-    at AsyncTree.runChildNode (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:114:8)
-    at AsyncTree.walkDown (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:80:10)
-    at AsyncTree.walkUp (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:97:8)
-    at AsyncTree.walkDown (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:90:12)
-    at AsyncTree.walkUp (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:97:8)
-    at AsyncTree.walkDown (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:90:12)
-    at AsyncTree.traverse (C:\Users\sukad\Desktop\Nightwatch\nightwatch\lib\core\queue.js:73:8) 
-    </system-err> 
-   
- 
-   
-  
-    
-  
-    
-
-    
-
-    
-
-=======
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
-            failures="0"
-            tests="2">
-
-  <testsuite name="smoke.createActivity"
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="2" time="414.0" timestamp="Wed, 21 Feb 2018 18:28:55 GMT">
-  
-    <testcase name="downloadImages" classname="smoke.createActivity" time="31.21" assertions="1">
-
-    
-    </testcase>
-  
-    <testcase name="Creating an activity" classname="smoke.createActivity" time="382.8" assertions="3">
-
-    
-
-    
-
-    
-    </testcase>
-  
-
-  
-
-  
-  </testsuite>
-</testsuites>
->>>>>>> tests/tri_bc_regression1
->>>>>>> 98191a44a255c696d57b2889dc1875c15d3da683
