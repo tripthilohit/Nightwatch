@@ -65,7 +65,49 @@ var memberTab = function(driver)
 .click("//li[@class='mf-option-button']/button")
 .pause(2000)
 .execute('scrollTo(0,5000)')
-
+//filter by age
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[6]")
+.pause(2000)
+//Enter age range
+.click("//div[@class='filter-range-item ng-scope']/input[1]")
+.pause(2000)
+.setValue("//div[@class='filter-range-item ng-scope']/input[1]",driver.globals.userNames.ageRange1)
+.pause(3000)
+.click("//div[@class='filter-range-item ng-scope']/input[2]")
+.pause(3000)
+.setValue("//div[@class='filter-range-item ng-scope']/input[2]",driver.globals.userNames.ageRange2)
+.pause(2000)
+//click search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberAgeimage.png')
+.execute('scrollTo(0,5000)')
+//filter by Race
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[7]")
+.pause(2000)
+//Select Race
+.click("(//label[@class='control-checkbox control-checkbox-primary'])[1]")
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.execute('scrollTo(0,5000)')
+//filter by Race - Hispanic (yes)
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[8]")
+.pause(2000)
+//Select-yes
+.click("(//label[@class='control-checkbox control-checkbox-primary'])[3]") 
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.execute('scrollTo(0,5000)')
 
 
 
