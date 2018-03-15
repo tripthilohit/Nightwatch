@@ -5,12 +5,12 @@
 
   <testsuite name="Smoke.adminMembers"
     errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0"
-    tests="2" time="162.3" timestamp="Mon, 12 Mar 2018 18:41:26 GMT">
+    tests="2" time="213.2" timestamp="Tue, 13 Mar 2018 18:35:22 GMT">
   
-    <testcase name="signIn" classname="Smoke.adminMembers" time="25.17" assertions="0">
+    <testcase name="signIn" classname="Smoke.adminMembers" time="24.06" assertions="0">
     </testcase>
   
-    <testcase name="memberTab" classname="Smoke.adminMembers" time="137.1" assertions="0">
+    <testcase name="memberTab" classname="Smoke.adminMembers" time="189.1" assertions="0">
     </testcase>
   
 

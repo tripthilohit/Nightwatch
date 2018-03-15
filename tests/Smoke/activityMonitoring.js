@@ -73,7 +73,7 @@ var activityMonitoring = function(driver)
   //decline a post with reason
   .click("(//button[@type='button'])[61]")
   .pause(2000)
-  .waitForElementVisible("(//ul[@class='reason-list'])[12]/li[2]",2000)
+  .waitForElementVisible("(//ul[@class='reason-list'])[12]/li[2]",3000)
   .moveToElement("(//ul[@class='reason-list'])[12]/li[2]",1,1)
   .pause(2000)
   .mouseButtonClick(1)

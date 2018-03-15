@@ -1,13 +1,13 @@
 var userNames = {
   
-  memberURL: 'http://tripsprint96a.staging.socialmedialink.com',
-  memberEmail: 'subs@yopmail.com',
+  memberURL: 'https://tripsprint95c.staging.socialmedialink.com/',
+  memberEmail: 'robss@yopmail.com',
   memberPassword: 'general1234',
   memberFirstName: 'first',
   memberLastName: 'last',
   zipCode: '07093',
   birthDay: '10/10/1991',
-  member2Email:'Jimysnow@yopmail.com',
+  member2Email:'Jimkysnow@yopmail.com',
   member2Password:'general1234',
   member2FirstName:'Jims',
   member2LastName:'Snow',
@@ -15,7 +15,7 @@ var userNames = {
 
   sprint: '96a',
   adminURL: 'https://admin.staging.socialmedialink.com',
-  adminEmail: 'tripsprint96a@yopmail.com',
+  adminEmail: 'tripsprint95c@yopmail.com',
   adminPassword: 'General123$',
   facebookEmail: 'sukada.testmember8@socialmedialink.com',
   facebookPass: 'general1234',
@@ -32,8 +32,8 @@ var userNames = {
   account_no: 667,
   path: 'C:/Users/you/Downloads/',
   memberEmailFemale: 'leena@yopmail.com',
-  darDate:"(//td[@class='day'])13",
-  uin:'12553',
+  darDate:"(//td[@class='day'])[14]",
+  uin:'12595',
   pinterestUserName:'sukadamr',
   usAddressLine1:'6010',
   usAddressLine2:'Boulevard East',
@@ -44,6 +44,7 @@ var userNames = {
   postalCode:'K1A 0B1',
   memberNewEmail: 'sukrao17@yopmail.com',
   memberNewPassword:'12345678',
+  state: 'NJ'
 
 
 

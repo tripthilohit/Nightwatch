@@ -1,44 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="7"
+<testsuites errors="2"
             failures="0"
-            tests="7">
+            tests="4">
 
-  <testsuite name="Smoke.downLoadAnalytics"
-    errors="7" failures="0" hostname="" id="" package="Smoke" skipped="0"
-    tests="7" time="322.4" timestamp="Tue, 13 Mar 2018 14:52:31 GMT">
+  <testsuite name="Smoke.downloadAnalytics"
+    errors="2" failures="0" hostname="" id="" package="Smoke" skipped="0"
+    tests="4" time="295.6" timestamp="Wed, 14 Mar 2018 12:58:28 GMT">
   
-    <testcase name="downloadImages" classname="Smoke.downLoadAnalytics" time="34.02" assertions="1">
-
-    
-    </testcase>
-  
-    <testcase name="adminlogin" classname="Smoke.downLoadAnalytics" time="27.97" assertions="1">
+    <testcase name="downloadImages" classname="Smoke.downloadAnalytics" time="47.27" assertions="1">
 
     
     </testcase>
   
-    <testcase name="activityMonitoring" classname="Smoke.downLoadAnalytics" time="33.99" assertions="0">
-    </testcase>
-  
-    <testcase name="OverviewTab" classname="Smoke.downLoadAnalytics" time="10.99" assertions="0">
-    </testcase>
-  
-    <testcase name="downloadAnalytics" classname="Smoke.downLoadAnalytics" time="147.4" assertions="1">
+    <testcase name="adminlogin" classname="Smoke.downloadAnalytics" time="51.79" assertions="1">
 
     
     </testcase>
   
-    <testcase name="downloadAnalyticsPreviewButton" classname="Smoke.downLoadAnalytics" time="3.577" assertions="0">
+    <testcase name="OverviewTab" classname="Smoke.downloadAnalytics" time="20.59" assertions="0">
     </testcase>
   
-    <testcase name="downloadAnalyticsPreview" classname="Smoke.downLoadAnalytics" time="64.45" assertions="0">
+    <testcase name="downloadAnalytics" classname="Smoke.downloadAnalytics" time="175.9" assertions="1">
+
+    
     </testcase>
   
 
   
     <system-err>
-      ERROR: Unable to locate element: &quot;(//div[@class='grid '])[1]/div[2]/div[1]&quot; using: xpath
-    at Object.downloadImages (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:15:6)
+      ERROR: Unable to locate element: &quot;//a[@class=' test-hub-nav-overview']&quot; using: xpath
+    at Object.OverviewTab (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downloadAnalytics.js:89:4)
     at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -48,63 +39,8 @@
     at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
     at _combinedTickCallback (internal/process/next_tick.js:131:7)
-ERROR: Unable to locate element: &quot;//label[@for='photo_download_quality_standard']&quot; using: xpath
-    at Object.downloadImages (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:17:6)
-    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-ERROR: Unable to locate element: &quot;//td[@class='active day']/preceeding-sibling::td[@class='day'][1]&quot; using: xpath
-    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:107:6)
-    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-ERROR: Unable to locate element: &quot;(//td[@class='day'])13&quot; using: xpath
-    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:194:6)
-    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-ERROR: Unable to locate element: &quot;//ul[@id='ui-id-3']/li/a&quot; using: xpath
-    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:204:6)
-    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-ERROR: Unable to locate element: &quot;(//button[@ng-click='ctrl.add(share)'])[7]&quot; using: xpath
-    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:221:6)
-    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at _combinedTickCallback (internal/process/next_tick.js:131:7)
-ERROR: Unable to locate element: &quot;(//button[@ng-click='ctrl.add(share)'])[6]&quot; using: xpath
-    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downLoadAnalytics.js:227:6)
+ERROR: Unable to locate element: &quot;//ul[@id='ui-id-2']/li/a&quot; using: xpath
+    at Object.downloadAnalytics (/Users/sukada/Desktop/Nightwatch/tests/Smoke/downloadAnalytics.js:202:6)
     at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)

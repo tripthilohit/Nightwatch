@@ -95,6 +95,7 @@ var memberTab = function(driver)
 //click Search
 .click("//li[@class='mf-option-button']/button")
 .pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberRaceimage.png')
 .execute('scrollTo(0,5000)')
 //filter by Race - Hispanic (yes)
 .click("//button[@class='dropdown-select-toggle filter-option']")
@@ -114,15 +115,91 @@ var memberTab = function(driver)
 .click("//ul[@class='dropdown-select-menu']/li[9]")
 .pause(2000)
 //Select- Married
-.click("(//label[@class='control-checkbox control-checkbox-primary'])[3]") 
+.click("(//label[@class='control-checkbox control-checkbox-primary'])[1]") 
 .pause(2000)
 //click Search
 .click("//li[@class='mf-option-button']/button")
 .pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberMarriedimage.png')
 .execute('scrollTo(0,5000)')
-
-
-
+//filter by Children
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[10]")
+.pause(2000)
+//Select- yes
+.click("(//label[@class='control-checkbox control-checkbox-primary'])[1]") 
+.pause(2000)
+//No of children
+.click("//input[@ng-model='item.data.value.from']")
+.pause(2000)
+.setValue("//input[@ng-model='item.data.value.from']",'1')
+.pause(3000)
+.click("//input[@ng-model='item.data.value.to']")
+.pause(2000)
+.setValue("//input[@ng-model='item.data.value.to']",'2')
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberChildrenimage.png')
+.execute('scrollTo(0,5000)')
+//filter by Household income
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[11]")
+.pause(2000)
+// select range - 50K to 60K
+.click("(//label[@class='control-checkbox control-checkbox-primary'])[8]")
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberIncomeimage.png')
+.execute('scrollTo(0,5000)')
+//filter by Zipcode
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[12]")
+.pause(2000)
+//Enter Zipcode
+.click("//input[@ng-model='row.value']")
+.pause(2000)
+.setValue("//input[@ng-model='row.value']",driver.globals.userNames.zipCode)
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberZipcodeimage.png')
+.execute('scrollTo(0,5000)')
+//filter by State
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[13]")
+.pause(2000)
+//Enter State
+.click("//input[@ng-model='item.data.value']")
+.pause(2000)
+.setValue("//input[@ng-model='item.data.value']",driver.globals.userNames.state)
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberStateimage.png')
+.execute('scrollTo(0,5000)')
+//filter by Country
+.click("//button[@class='dropdown-select-toggle filter-option']")
+.pause(2000)
+.click("//ul[@class='dropdown-select-menu']/li[14]")
+.pause(2000)
+//Select Country - US
+.click("(//label[@class='control-checkbox control-checkbox-primary'])[2]")
+.pause(2000)
+//click Search
+.click("//li[@class='mf-option-button']/button")
+.pause(2000)
+.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyadminMemberCountryimage.png')
+.execute('scrollTo(0,5000)')
 
 
 }

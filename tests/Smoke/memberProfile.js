@@ -210,7 +210,7 @@ var personalInfo = function(driver)
 .pause(2000)
 .click("(//div[@class='form-group'])[24]/select/option[5]")
 .pause(2000)
-//House Hold income
+//Household income
 .click("(//div[@class='form-group'])[25]/select/option[7]")
 .pause(2000)
 // Save personal info
@@ -498,20 +498,20 @@ var SigningEmail2= function(driver)
     driver
     .url(driver.globals.userNames.memberURL)
     .windowMaximize("current")
-    .waitForElementVisible('body', 2000)
+    .waitForElementVisible('body', 3000)
     .useXpath()
     .click("(//a[contains(text(), 'Create Account')])[2]")
-    .pause(1000)
+    .pause(2000)
     .click("//div[@class='desktop-container ng-scope']/div/div[1]/a[1]/div")
-    .pause(1000)
+    .pause(2000)
     .click("//div[@class='desktop-container ng-scope']/div/form/div[1]/input")
-    .pause(1000)
+    .pause(2000)
     .setValue('//div[@class="desktop-container ng-scope"]/div/form/div[1]/input', driver.globals.userNames.member2Email)
-    .pause(1000)
+    .pause(2000)
     .click("//div[@class='desktop-container ng-scope']/div/form/div[2]/div/input[1]")
-    .pause(1000)
+    .pause(2000)
     .setValue("//div[@class='desktop-container ng-scope']/div/form/div[2]/div/input[1]", driver.globals.userNames.member2Password)
-    .pause(1000)
+    .pause(2000)
     .click("//div[@class='desktop-container ng-scope']/div/form/div[3]/div/div/div/input")
     .pause(2000)
     .click("//div[@class='desktop-container ng-scope']/div/button")
@@ -519,7 +519,7 @@ var SigningEmail2= function(driver)
     .url("http://yopmail.com")
     .pause(3000)
     .click("//input[@id='login']")
-    .pause(1000)
+    .pause(2000)
     .setValue("//input[@id='login']", driver.globals.userNames.member2Email)
     .pause(5000)
     .click("//input[@class='sbut']")
@@ -628,12 +628,12 @@ var connectFbAndTw = function(driver)
 
 module.exports={
 downloadImages: downloadImages,
-signinEmail: modulememberSigninEmail.signinEmail, 
-memberProfilePage: memberProfilePage,
-generalInfo: generalInfo,
-personalInfo: personalInfo,
-shippingInfoCa: shippingInfoCa,
-shippingInfoUs: shippingInfoUs,
+//signinEmail: modulememberSigninEmail.signinEmail, 
+//memberProfilePage: memberProfilePage,
+//generalInfo: generalInfo,
+//personalInfo: personalInfo,
+//shippingInfoCa: shippingInfoCa,
+//shippingInfoUs: shippingInfoUs,
 //memberHistory:memberHistory,
 //memberChangePassword: memberChangePassword,
 //memberSigninNewPassword: memberSigninNewPassword,
@@ -644,7 +644,7 @@ shippingInfoUs: shippingInfoUs,
 //signinEmail: modulememberSigninEmail.signinEmail, 
 //memberProfilePage: memberProfilePage,
 //emailAndPassword: emailAndPassword,
-//SigningEmail2: SigningEmail2,
-//memberProfilePage2: memberProfilePage,
-//connectFbAndTw: connectFbAndTw,
+SigningEmail2: SigningEmail2,
+memberProfilePage2: memberProfilePage,
+connectFbAndTw: connectFbAndTw,
 }

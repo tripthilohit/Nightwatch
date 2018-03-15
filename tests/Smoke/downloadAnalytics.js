@@ -1,4 +1,4 @@
-ar downloadImages = function(driver)
+var downloadImages = function(driver)
 {
     driver
 .url("https://burst.shopify.com/")
@@ -103,8 +103,6 @@ var downloadAnalytics = function(driver)
     .pause(2000)
     .click("//input[@ng-model='ctrl.report.end_date']")
     .pause(2000)
-    .click("//td[@class='active day']/preceeding-sibling::td[@class='day'][1]")
-    .pause(5000)
     .click("//input[@ng-model='ctrl.report.start_date']")
     .pause(2000)
     .click("//input[@ng-model='ctrl.report.end_date']")
@@ -195,14 +193,16 @@ var downloadAnalytics = function(driver)
     .click("//button[@ng-click='ctrl.add()']")
     .pause(2000)
     //adding top member content using UIN, set UIN value in globals
+    .execute('scrollTo(0,4000)')
     .click("//input[@ng-model='shareId']")
     .pause(2000)
     .setValue("//input[@ng-model='shareId']",driver.globals.userNames.uin)
-    .pause(2000)
-    //.waitForElementVisible("//ul[@id='ui-id-3']/li/a",2000)
-    .moveToElement("//ul[@id='ui-id-3']/li/a",1,1)
+    .pause(1000)
+    //.waitForElementVisible("//li[@class='ui-menu-item']/a",2000)
+    .moveToElement("//ul[@id='ui-id-2']/li/a",1, 1)
     .pause(2000)
     .mouseButtonClick(1)
+    .pause(2000)
     //adding top member content using "Add" button
     .pause(2000)
     .click("(//button[@ng-click='ctrl.add(share)'])[1]")
@@ -215,15 +215,9 @@ var downloadAnalytics = function(driver)
     .pause(2000)
     .click("(//button[@ng-click='ctrl.add(share)'])[5]")
     .pause(2000)
-    .click("(//button[@ng-click='ctrl.add(share)'])[6]")
-    .pause(2000)
-    .click("(//button[@ng-click='ctrl.add(share)'])[7]")
-    .pause(4000)
     .click("(//button[@ng-click='ctrl.add(share)'])[2]")
     .pause(2000)
     .click("(//button[@ng-click='ctrl.add(share)'])[4]")
-    .pause(2000)
-    .click("(//button[@ng-click='ctrl.add(share)'])[6]")
     .pause(2000)
     .click("(//button[@class='btn btn-sidebar btn-primary w100 test-activity-save'])[1]")
     .pause(2000)
@@ -299,9 +293,9 @@ var downloadAnalyticsPreview = function(driver)
 module.exports={
   downloadImages: downloadImages,
   adminlogin:adminlogin,
-  activityMonitoring:activityMonitoring,
+  //activityMonitoring:activityMonitoring,
   OverviewTab:OverviewTab,
   downloadAnalytics:downloadAnalytics,
-  downloadAnalyticsPreviewButton:downloadAnalyticsPreviewButton,
-  downloadAnalyticsPreview:downloadAnalyticsPreview
+  //downloadAnalyticsPreviewButton:downloadAnalyticsPreviewButton,
+  //downloadAnalyticsPreview:downloadAnalyticsPreview
 }

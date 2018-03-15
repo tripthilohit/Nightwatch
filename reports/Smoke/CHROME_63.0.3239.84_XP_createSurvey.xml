@@ -3,24 +3,24 @@
             failures="0"
             tests="4">
 
-  <testsuite name="smoke.createSurvey"
-    errors="1" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="4" time="213.6" timestamp="Tue, 13 Mar 2018 14:34:42 GMT">
+  <testsuite name="Smoke.createSurvey"
+    errors="1" failures="0" hostname="" id="" package="Smoke" skipped="0"
+    tests="4" time="203.4" timestamp="Tue, 13 Mar 2018 19:56:10 GMT">
   
-    <testcase name="downloadImages" classname="smoke.createSurvey" time="37.97" assertions="1">
+    <testcase name="downloadImages" classname="Smoke.createSurvey" time="37.71" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signIn" classname="smoke.createSurvey" time="20.98" assertions="0">
+    <testcase name="signIn" classname="Smoke.createSurvey" time="13.79" assertions="0">
     </testcase>
   
-    <testcase name="clickAdminLinks" classname="smoke.createSurvey" time="132.1" assertions="1">
+    <testcase name="clickAdminLinks" classname="Smoke.createSurvey" time="123.5" assertions="1">
 
     
     </testcase>
   
-    <testcase name="missionLogic" classname="smoke.createSurvey" time="22.54" assertions="1">
+    <testcase name="missionLogic" classname="Smoke.createSurvey" time="28.38" assertions="1">
 
     
     </testcase>
@@ -29,16 +29,16 @@
   
     <system-err>
       ERROR: Unable to locate element: &quot;//textarea[@class='q-field test-question-answer-0 placeholder']&quot; using: xpath
-    at Object.clickAdminLinks (/Users/tripthi/Desktop/Nightwatch/tests/smoke/createSurvey.js:103:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+    at Object.clickAdminLinks (/Users/sukada/Desktop/Nightwatch/tests/Smoke/createSurvey.js:103:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
     </system-err>
   
 
