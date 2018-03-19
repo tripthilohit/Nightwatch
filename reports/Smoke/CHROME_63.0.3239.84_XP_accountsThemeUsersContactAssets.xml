@@ -1,93 +1,566 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="4"
+<testsuites errors="47"
             failures="0"
             tests="10">
 
-  <testsuite name="smoke.accountsThemeUsersContactAssets"
-    errors="4" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="10" time="671.7" timestamp="Mon, 12 Mar 2018 20:25:40 GMT">
+  <testsuite name="Smoke.accountsThemeUsersContactAssets"
+    errors="47" failures="0" hostname="" id="" package="Smoke" skipped="0"
+    tests="10" time="1988" timestamp="Fri, 16 Mar 2018 13:38:35 GMT">
   
-    <testcase name="downloadImages" classname="smoke.accountsThemeUsersContactAssets" time="96.12" assertions="1">
+    <testcase name="downloadImages" classname="Smoke.accountsThemeUsersContactAssets" time="296.1" assertions="1">
 
     
     </testcase>
   
-    <testcase name="signIn" classname="smoke.accountsThemeUsersContactAssets" time="30.50" assertions="1">
+    <testcase name="signIn" classname="Smoke.accountsThemeUsersContactAssets" time="111.3" assertions="1">
 
     
     </testcase>
   
-    <testcase name="accounts" classname="smoke.accountsThemeUsersContactAssets" time="22.79" assertions="0">
+    <testcase name="accounts" classname="Smoke.accountsThemeUsersContactAssets" time="102.5" assertions="0">
     </testcase>
   
-    <testcase name="theme" classname="smoke.accountsThemeUsersContactAssets" time="46.67" assertions="0">
+    <testcase name="theme" classname="Smoke.accountsThemeUsersContactAssets" time="148.3" assertions="0">
     </testcase>
   
-    <testcase name="users" classname="smoke.accountsThemeUsersContactAssets" time="37.77" assertions="0">
+    <testcase name="users" classname="Smoke.accountsThemeUsersContactAssets" time="98.76" assertions="0">
     </testcase>
   
-    <testcase name="confirmAdminusers" classname="smoke.accountsThemeUsersContactAssets" time="157.0" assertions="0">
+    <testcase name="confirmAdminusers" classname="Smoke.accountsThemeUsersContactAssets" time="434.8" assertions="0">
     </testcase>
   
-    <testcase name="contactInfo" classname="smoke.accountsThemeUsersContactAssets" time="13.89" assertions="0">
+    <testcase name="contactInfo" classname="Smoke.accountsThemeUsersContactAssets" time="28.75" assertions="0">
     </testcase>
   
-    <testcase name="assets" classname="smoke.accountsThemeUsersContactAssets" time="71.77" assertions="0">
+    <testcase name="assets" classname="Smoke.accountsThemeUsersContactAssets" time="175.9" assertions="0">
     </testcase>
   
-    <testcase name="verifyAdminLevelRestrictions" classname="smoke.accountsThemeUsersContactAssets" time="80.21" assertions="0">
+    <testcase name="verifyAdminLevelRestrictions" classname="Smoke.accountsThemeUsersContactAssets" time="200.4" assertions="0">
     </testcase>
   
-    <testcase name="memberSideVerify" classname="smoke.accountsThemeUsersContactAssets" time="115.0" assertions="0">
+    <testcase name="memberSideVerify" classname="Smoke.accountsThemeUsersContactAssets" time="391.2" assertions="0">
     </testcase>
   
 
   
     <system-err>
-      ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[1]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:289:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+      ERROR: Unable to locate element: &quot;(//a[@class='test-nav-config'])[2]&quot; using: xpath
+    at Object.confirmAdminusers (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:255:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//div[@class='tabs-navbar']/a[5]&quot; using: xpath
+    at Object.confirmAdminusers (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:258:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//div[@class='tabs-navbar']/a[6]&quot; using: xpath
+    at Object.contactInfo (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:268:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//textarea[@id='account_contact_address']&quot; using: xpath
+    at Object.contactInfo (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:271:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//textarea[@id='account_contact_address']&quot; using: xpath
+    at Object.contactInfo (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:272:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//textarea[@id='account_contact_address']&quot; using: xpath
+    at Object.contactInfo (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:273:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//input[@type='submit']&quot; using: xpath
+    at Object.contactInfo (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:275:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//div[@class='tabs-navbar']/a[7]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:283:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[1]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:286:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[1]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:287:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[1]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:288:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[1]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:290:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[1]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:291:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[1]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:292:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@class='btn btn-default'])[1]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:294:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[2]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:297:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[2]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:298:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[2]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:299:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[2]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:300:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:301:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[2]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:302:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[2]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:303:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@class='btn btn-default'])[2]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:305:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[3]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:308:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[3]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:309:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[3]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:310:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[3]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:311:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:312:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[3]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:313:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[3]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:314:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@class='btn btn-default'])[3]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:316:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[4]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:319:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[4]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:320:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@id='policy_name'])[4]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:321:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
 ERROR: Unable to locate element: &quot;//textarea[@id='policy_text'])[4]&quot; using: xpath
-    at Object.assets (/Users/tripthi/Desktop/Nightwatch/tests/smoke/accountsThemeUsersContactAssets.js:322:6)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
-    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
-    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
-    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
-    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
-    at process._tickCallback (internal/process/next_tick.js:150:11)
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:323:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[4]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:324:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//textarea[@id='policy_text'])[4]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:325:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//input[@class='btn btn-default'])[4]&quot; using: xpath
+    at Object.assets (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:327:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//a[contains(text(), 'Login')])[2]&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:449:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;(//div[contains(text(), 'Email')])[6]&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:451:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//div[@class='desktop-container ng-scope']/div/form/div[1]/input&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:453:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//div[@class=&quot;desktop-container ng-scope&quot;]/div/form/div[1]/input&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:455:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//div[@class='desktop-container ng-scope']/div/form/div[2]/input&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:457:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//div[@class='desktop-container ng-scope']/div/form/div[2]/input&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:459:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//div[@class='desktop-container ng-scope']/div/form/button&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:461:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//a[@href='#footer/contact_us']&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:468:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//textarea[@placeholder='type your message here']&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:470:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//textarea[@placeholder='type your message here']&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:471:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;//button[@class='btn btn-primary']&quot; using: xpath
+    at Object.memberSideVerify (/Users/sukada/Desktop/Nightwatch/tests/Smoke/accountsThemeUsersContactAssets.js:473:6)
+    at Module.call (/Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/sukada/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
     </system-err>
   
 

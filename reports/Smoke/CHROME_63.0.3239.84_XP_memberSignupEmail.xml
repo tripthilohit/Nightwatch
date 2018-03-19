@@ -3,19 +3,11 @@
             failures="0"
             tests="1">
 
-<<<<<<< HEAD
   <testsuite name="Smoke.memberSignupEmail"
     errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0"
-    tests="1" time="107.3" timestamp="Tue, 13 Mar 2018 13:54:13 GMT">
+    tests="1" time="362.1" timestamp="Fri, 16 Mar 2018 13:30:54 GMT">
   
-    <testcase name="Signing up via Email" classname="Smoke.memberSignupEmail" time="107.3" assertions="1">
-=======
-  <testsuite name="smoke.memberSignupEmail"
-    errors="0" failures="0" hostname="" id="" package="smoke" skipped="0"
-    tests="1" time="115.4" timestamp="Mon, 12 Mar 2018 20:10:50 GMT">
-  
-    <testcase name="Signing up via Email" classname="smoke.memberSignupEmail" time="115.4" assertions="1">
->>>>>>> 513df1c8719de70e0dcdef057ef5cddadd479e7e
+    <testcase name="Signing up via Email" classname="Smoke.memberSignupEmail" time="362.1" assertions="1">
 
     
     </testcase>
