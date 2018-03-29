@@ -1,23 +1,4 @@
-var downloadImages = function(driver)
-{
-    driver
-    .url("https://burst.shopify.com/")
-    .pause(3000)
-    .waitForElementVisible('body', 1000)
-    .useXpath()
-    //download activity badge
-    .pause(2000)
-    .setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-    .pause(1000)
-    .keys(driver.Keys.ENTER)
-    .pause(3000)
-    .click("//img[@alt='blue beach waves']")
-    .pause(2000)
-    .click("//label[@for='photo_download_quality_standard']")
-    .pause(2000)
-    .click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-    .pause(4000)
-}
+var moduledownloadImages =require('./downloadImages.js')
 
 var modulecreateSurvey=require('./createSurvey.js')
 
@@ -116,7 +97,8 @@ var activity = function(driver)
 
 
 module.exports = {
-    downloadImages: downloadImages,
+    loginFlikr: moduledownloadImages.loginFlikr,
+    activityBadgeDownload:moduledownloadImages.activityBadgeDownload,
     signIn: modulecreateSurvey.signIn,
     activity: activity,
     

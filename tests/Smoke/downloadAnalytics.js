@@ -1,23 +1,4 @@
-var downloadImages = function(driver)
-{
-    driver
-.url("https://burst.shopify.com/")
-.pause(3000)
-.waitForElementVisible('body', 1000)
-.useXpath()
-//download activity badge
-.pause(2000)
-.setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-.pause(1000)
-.keys(driver.Keys.ENTER)
-.pause(3000)
-.click("//img[@alt='blue beach waves']")
-.pause(2000)
-.click("//label[@for='photo_download_quality_standard']")
-.pause(2000)
-.click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-.pause(4000)
-}
+var moduledownloadImages =require('./downloadImages.js')
 
 var adminlogin =  function(driver)
   {
@@ -126,7 +107,7 @@ var downloadAnalytics = function(driver)
     //add logo
     .click("(//button[@ng-click='deleteImage()'])[1]")
     .pause(2000)
-    .setValue("(//div[@class='btn btn-upload btn-primary'])[1]/input",driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+    .setValue("(//div[@class='btn btn-upload btn-primary'])[1]/input",driver.globals.userNames.path + "26178156097_45d2e82dc7_o.jpg")
     .pause(3000)
     // enable benchmarks switch
     .click("//input[@id='switch_cb_ctrl.report.benchmarks_enabled']")
@@ -298,7 +279,8 @@ var downloadAnalyticsPreview = function(driver)
 }
 
 module.exports={
-  downloadImages: downloadImages,
+  loginFlikr: moduledownloadImages.loginFlikr,
+  activityBadgeDownload:moduledownloadImages.activityBadgeDownload,
   adminlogin:adminlogin,
   activityMonitoring:activityMonitoring,
   OverviewTab:OverviewTab,
