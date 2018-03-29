@@ -1,6 +1,6 @@
 var modulecreateSurvey=require('./createSurvey.js')
 
-//Navigate to members tab
+//Navigate to members tab te
 var memberTab = function(driver)
 {
   driver
