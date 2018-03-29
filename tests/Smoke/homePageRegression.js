@@ -417,6 +417,11 @@ var verifyHideFunctionMobile = function(driver)
     .pause(2000)
     .end()
 }
+var signupLcnAltId = function(driver)
+{
+	driver
+	.
+}
 module.exports =
 {
 	downloadImages:downloadImages,
