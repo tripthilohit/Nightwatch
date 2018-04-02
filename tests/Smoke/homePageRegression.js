@@ -417,14 +417,11 @@ var verifyHideFunctionMobile = function(driver)
     .pause(2000)
     .end()
 }
-var signupLcnAltId = function(driver)
-{
-	driver
-	.
-}
+
 module.exports =
 {
-	downloadImages:downloadImages,
+	desktopBackgroundDownload:moduledownloadImages.desktopBackgroundDownload,
+	mobileBackgroundDownload:moduledownloadImages.mobileBackgroundDownload,
 	signInAdmin: modulecreateSurvey.signIn,
 homePageTemplate1: homePageTemplate1,
 verifyMemberSideT1: verifyMemberSideT1,
