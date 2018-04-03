@@ -453,8 +453,30 @@ var previewQuickOfferDisableFbTw = function(driver)
 {
 	driver
 	.useXpath()
+	//click mission hubs link
 	.click("//a[@class='test-nav-hubs']")
-
+	.pause(2000)
+	//click quick offer mission
+	.click("//a[contains(text(),'Quick offer')]")
+	.pause(2000)
+	//click the survey and activity page link
+	.click("//a[@class=' test-hub-nav-structure']")
+	.pause(1000)
+	//click to go to quick offer page
+	.click("//a[@class='rowclick test-hub-structure-item-link ng-binding']")
+	.pause(2000)
+	//click preview offered
+	.click("(//span[@class='translation_missing'])[1]")
+	.pause(1000)
+	//switch to preview frame
+	.window_handles(function(result) {
+    var handle = result.value[1];
+    this.switchWindow(handle);})
+    .pause(4000)
+    .click("//div[@class='facebook']/img")
+    .pause(1000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/quickOfferPreviewFBVerification.png')
+    .pause(2000)
 }
 var lcnAltIDMemberSignup = function(driver)
 {
@@ -539,7 +561,7 @@ var lcnAltIDMemberSignup = function(driver)
 
 module.exports =
 {
-	/*loginFlikr: moduledownloadImages.loginFlikr,
+	loginFlikr: moduledownloadImages.loginFlikr,
 	desktopBackgroundDownload: moduledownloadImages.desktopBackgroundDownload,
 	mobileBackgroundDownload: moduledownloadImages.mobileBackgroundDownload,
 	signInAdmin: modulecreateSurvey.signIn,
@@ -557,8 +579,8 @@ verifyBeforeSave: verifyBeforeSave,
 signInAdmin5: modulecreateSurvey.signIn,
 hideFunctionMobile: hideFunctionMobile,
 verifyHideFunctionMobile: verifyHideFunctionMobile,
-lcnAltIDAdminSettings: lcnAltIDAdminSettings,*/
-
-//lcnAltIDMemberSignup: lcnAltIDMemberSignup
+lcnAltIDAdminSettings: lcnAltIDAdminSettings,
+previewQuickOfferDisableFbTw: previewQuickOfferDisableFbTw,
+lcnAltIDMemberSignup: lcnAltIDMemberSignup
 
 }
