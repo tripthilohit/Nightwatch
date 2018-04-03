@@ -25,7 +25,7 @@ var userNames = {
   instagramUserName: 'tripthi.shetty',
   instagramPass: 'abcd1234',
   superAdminEmail: 'admin@sml.com',
-  superAdminPass: 'GPassword123!',
+  superAdminPass: 'Password123!',
   account_no: 6,
   path: 'C:/Users/you/Downloads/',
   memberEmailFemale: 'leena@yopmail.com',
