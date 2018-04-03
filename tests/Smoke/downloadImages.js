@@ -278,6 +278,44 @@ var mobileBackgroundDownload = function(driver)
     .url("https://www.flickr.com/photos/156280374@N06/sets/72157667151238758")
     .pause(1000)
 }
+var heroImage2Download = function(driver)
+{   driver
+    .useXpath()
+    //download file name: 40318479195_b29a7160c8_o.jpg
+    .click("//a[@aria-label='heroImage2 by YOU!']")  
+    .pause(2000)
+    //click download
+    .click("//i[@class='ui-icon-download']")
+    .pause(2000)
+    //click original 
+    .click("//li[@class='Original']/a")
+    .pause(2000)
+    //click download
+    .click("//i[@class='ui-icon-download']")
+    .pause(2000)
+    //click back to album
+    .url("https://www.flickr.com/photos/156280374@N06/sets/72157667151238758")
+    .pause(1000)
+}
+var heroImage1Download = function(driver)
+{   driver
+    .useXpath()
+    //download file name: 39404802170_a4b44e9066_o.jpg
+    .click("//a[@aria-label='heroImage1 by YOU!']")  
+    .pause(2000)
+    //click download
+    .click("//i[@class='ui-icon-download']")
+    .pause(2000)
+    //click original 
+    .click("//li[@class='Original']/a")
+    .pause(2000)
+    //click download
+    .click("//i[@class='ui-icon-download']")
+    .pause(2000)
+    //click back to album
+    .url("https://www.flickr.com/photos/156280374@N06/sets/72157667151238758")
+    .pause(1000)
+}
 module.exports={
 loginFlikr: loginFlikr,
 activityBadgeDownload: activityBadgeDownload,
@@ -292,5 +330,7 @@ topicImageDownload: topicImageDownload,
 brandConnectMemberImageDownload: brandConnectMemberImageDownload,
 pinterestDownload: pinterestDownload,
 desktopBackgroundDownload:desktopBackgroundDownload,
-mobileBackgroundDownload:mobileBackgroundDownload
+mobileBackgroundDownload:mobileBackgroundDownload,
+heroImage2Download:heroImage2Download,
+heroImage1Download: heroImage1Download
 }
