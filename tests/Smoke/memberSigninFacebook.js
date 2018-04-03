@@ -1,13 +1,15 @@
-module.exports = {
-  'Signing in via Facebook' : function(driver)
+var  SigninginFacebook=function(driver)
   {
     driver
     .url(driver.globals.userNames.memberURL)
     .windowMaximize("current")
     .waitForElementVisible('body', 2000)
     .useXpath()
-    .click("(//a[contains(text(), 'Create Account')])[2]")
+    .click("(//a[@class='btn login themed-button'])[2]")
     .pause(1000)
+    .window_handles(function(result) {
+    var handle = result.value[1];
+    this.switchWindow(handle);})
     .click("//div[@class='desktop-container ng-scope']/div/div[1]/a[2]/div")
     .pause(1000)
     .click("//input[@id='email']")
@@ -23,6 +25,9 @@ module.exports = {
     .pause(4000)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/registrationSigninSuccessfulViaFacebook.png')
     .pause(2000)
-    .end()
+    
   }
+module.exports = {
+    SigninginFacebook: SigninginFacebook
+  
 }
