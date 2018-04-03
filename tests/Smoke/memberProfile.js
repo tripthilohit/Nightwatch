@@ -1,23 +1,4 @@
-var downloadImages = function(driver)
-{
-    driver
-.url("https://burst.shopify.com/")
-.pause(3000)
-.waitForElementVisible('body', 1000)
-.useXpath()
-//download activity badge
-.pause(2000)
-.setValue("//input[@class='marketing-input search-form__input  search-form__input--jumbo']", "beach")
-.pause(1000)
-.keys(driver.Keys.ENTER)
-.pause(3000)
-.click("//img[@alt='blue beach waves']")
-.pause(2000)
-.click("//label[@for='photo_download_quality_standard']")
-.pause(2000)
-.click("//button[@class='marketing-button marketing-button--block js-open-contextual-subscribe-modal-on-third']")
-.pause(4000)
-}
+var moduledownloadImages =require('./downloadImages.js')
 
 
 var modulememberSigninEmail = require('./memberSigninEmail.js')
@@ -86,7 +67,7 @@ var generalInfo = function(driver)
 .pause(2000)
 //upload photo using "Browse" button
 .execute('scrollTo(200,0)')
-.setValue("//div[@class='btn btn-color profile-upload-btn']/input[1]",driver.globals.userNames.path + "blue-beach-waves_925x.jpg")
+.setValue("//div[@class='btn btn-color profile-upload-btn']/input[1]",driver.globals.userNames.path + "26178156097_45d2e82dc7_o.jpg")
 .pause(3000) 
 //About fie
 .click("//textarea[@id='member_about']")
@@ -631,7 +612,8 @@ var connectFbAndTw = function(driver)
 }
 
 module.exports={
-//downloadImages: downloadImages,
+loginFlikr: moduledownloadImages.loginFlikr,
+activityBadgeDownload:moduledownloadImages.activityBadgeDownload,
 signinEmail: modulememberSigninEmail.signinEmail, 
 memberProfilePage: memberProfilePage,
 generalInfo: generalInfo,
@@ -645,19 +627,17 @@ memberProfilePage1: memberProfilePage,
 deactivateAccount: deactivateAccount,
 signIn: modulecreateSurvey.signIn,
 adminMember: adminMember,
-<<<<<<< HEAD
-//signinEmail: modulememberSigninEmail.signinEmail, 
-//memberProfilePage: memberProfilePage,
-//emailAndPassword: emailAndPassword,
-SigningEmail2: SigningEmail2,
+signinEmaila: modulememberSigninEmail.signinEmail, 
+memberProfilePage: memberProfilePage,
+emailAndPassword: emailAndPassword,
+SigningEmailb: SigningEmail2,
 memberProfilePage2: memberProfilePage,
-connectFbAndTw: connectFbAndTw
-=======
-signinEmail: modulememberSigninEmail.signinEmail, 
+connectFbAndTw: connectFbAndTw,
+signinEmail2: modulememberSigninEmail.signinEmail, 
 memberProfilePage: memberProfilePage,
 emailAndPassword: emailAndPassword,
 SigningEmail2: SigningEmail2,
 memberProfilePage2: memberProfilePage,
 connectFbAndTw: connectFbAndTw,
->>>>>>> 2dacb16
+
 }
