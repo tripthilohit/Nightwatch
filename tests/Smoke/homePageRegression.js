@@ -415,11 +415,133 @@ var verifyHideFunctionMobile = function(driver)
     .pause(500)
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/verifyHideMobileSplashHeadline.png')
     .pause(2000)
+
+}
+
+var lcnAltIDAdminSettings = function(driver)
+{
+driver
+	.useXpath()
+	//click administration
+	.click("(//a[@class='test-nav-config'])[2]")
+	.pause(3000)
+	//click home page link
+	.click("//a[@href='/accounts/home_page']")
+	.pause(3000)
+	//scroll down
+	.execute('scrollTo(2000,2000)')
+	.pause(2000)
+	//enable lcn
+	.click("//input[@id='home_page_theme.require_loyalty_card_number']")
+	.pause(1000)
+	//enable alt id
+	.click("//input[@id='home_page_theme.require_alt_id']")
+	.pause(1000)
+	//disable FB login
+	.click("//input[@id='home_page_theme.allow_facebook_login']")
+	.pause(1000)
+	//disable TW login
+	.click("//input[@id='home_page_theme.allow_twitter_login']")
+	.pause(1000)
+	//save
+	.execute('scrollTo(0,0)')
+	.pause(2000)
+	.click("//a[@class='btn btn-default']")
+	.pause(4000)
+}
+var previewQuickOfferDisableFbTw = function(driver)
+{
+	driver
+	.useXpath()
+	.click("//a[@class='test-nav-hubs']")
+
+}
+var lcnAltIDMemberSignup = function(driver)
+{
+	driver
+	.useXpath()
+	//redirect to member side
+	.url(driver.globals.userNames.memberURL)
+	.pause(2000)
+	.click("(//a[@class='btn create-account themed-button'])[2]")
+	.pause(1000)
+	.click("(//div[@class='button-label'])[6]")
+	.pause(1000)
+	.click("(//input[@type='email'])[6]")
+	.setValue("(//input[@type='email'])[6]","lcnaltid@yopmail.com")
+	.click("(//input[@type='password'])[6]")
+	.setValue("(//input[@type='password'])[6]","12345678")
+	.click("(//input[@id='member_loyalty_card_number'])[6]")
+	.setValue("(//input[@id='member_loyalty_card_number'])[6]","123456789012")
+	.click("(//input[@id='age_requirement'])[6]")
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/lcnAltIDMemberSignupForm.png')
+    .pause(2000)
+    .click("(//button[@type='submit'])[6]")
+    .pause(1000)
+    //redirect to yopmail
+    .url("http://yopmail.com")
+    .pause(3000)
+    .click("//input[@id='login']")
+    .pause(1000)
+    .setValue("//input[@id='login']", "lcnaltid@yopmail.com")
+    .pause(5000)
+    .click("//input[@class='sbut']")
+    .pause(4000)
+    .frame('ifmail')
+    .pause(2000)
+    .click("//td[@class='mcnButtonContent']/a")
+    .pause(4000)
+    .window_handles(function(result) {
+    var handle = result.value[1];
+    this.switchWindow(handle);})
+    .pause(2000)
+    .click("(//form[@id='edit_member'])[6]/div[2]/input")
+    .pause(1000)
+    //add first name
+    .setValue("(//form[@id='edit_member'])[6]/div[2]/input", driver.globals.userNames.memberFirstName)
+    .pause(2000)
+    .click("(//form[@id='edit_member'])[6]/div[3]/input")
+    .pause(1000)
+    //add last name
+    .setValue("(//form[@id='edit_member'])[6]/div[3]/input", driver.globals.userNames.memberLastName)
+    .pause(2000)
+    .click("(//form[@id='edit_member'])[6]/div[5]/input")
+    .pause(1000)
+    //add zipcode
+    .setValue("(//form[@id='edit_member'])[6]/div[5]/input", driver.globals.userNames.zipCode)
+    .pause(1000)
+    //select month
+    .click("(//form[@id='edit_member'])[6]/div[6]/div/div/select")
+    .pause(1000)
+    .click("(//form[@id='edit_member'])[6]/div[6]/div/div/select/option[2]")
+    .pause(2000)
+    //select day
+    .click("(//form[@id='edit_member'])[6]/div[6]/div/div[2]/input")
+    .pause(1000)
+    .setValue("(//form[@id='edit_member'])[6]/div[6]/div/div[2]/input","15")
+    .pause(1000)
+    //select year
+    .click("(//form[@id='edit_member'])[6]/div[6]/div/div[3]/input")
+    .pause(500)
+    .setValue("(//form[@id='edit_member'])[6]/div[6]/div/div[3]/input","1991")
+    .pause(1000)
+    //select gender
+    .click("(//form[@id='edit_member'])[6]/div[7]/select")
+    .pause(1000)
+    .click("(//form[@id='edit_member'])[6]/div[7]/select/option[2]")
+    .pause(2000)
+    .click("(//button[@class='btn login themed-button'])[6]")
+    .pause(4000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/lcnAltIDMemberSignupRegister.png')
+    .pause(2000)
     .end()
 }
+
 module.exports =
 {
-	downloadImages:downloadImages,
+	/*loginFlikr: moduledownloadImages.loginFlikr,
+	desktopBackgroundDownload: moduledownloadImages.desktopBackgroundDownload,
+	mobileBackgroundDownload: moduledownloadImages.mobileBackgroundDownload,
 	signInAdmin: modulecreateSurvey.signIn,
 homePageTemplate1: homePageTemplate1,
 verifyMemberSideT1: verifyMemberSideT1,
@@ -432,6 +554,11 @@ verifyMemberSideT3: verifyMemberSideT3,
 signInAdmin4: modulecreateSurvey.signIn,
 previewDesktopMobile: previewDesktopMobile,
 verifyBeforeSave: verifyBeforeSave,
+signInAdmin5: modulecreateSurvey.signIn,
 hideFunctionMobile: hideFunctionMobile,
-verifyHideFunctionMobile: verifyHideFunctionMobile
+verifyHideFunctionMobile: verifyHideFunctionMobile,
+lcnAltIDAdminSettings: lcnAltIDAdminSettings,*/
+
+//lcnAltIDMemberSignup: lcnAltIDMemberSignup
+
 }

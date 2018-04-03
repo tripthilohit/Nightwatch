@@ -28,8 +28,8 @@
         "enabled" : false,
         "path" : ""
       },
-      "username": "sukada.ramakrishna@socialmedialink.com",
-      "access_key": "u89e4efd851e17e7",
+      "username": "tripthi.shetty@socialmedialink.com",
+      "access_key": "u283c7d7d4fafeb7",
       "desiredCapabilities": {
         "acceptSslCerts": "1",
         "browserName": "Chrome",

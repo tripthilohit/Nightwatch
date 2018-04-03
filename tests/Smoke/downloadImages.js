@@ -23,12 +23,12 @@ var loginFlikr = function(driver)
     //click you
     .click("//a[@class='gn-title you']")
     .pause(2000)
-    //click camera roll option
+    //click albums
     .click("(//a[contains(text(),'Albums')])[3]")
     .pause(2000)
     //click album nightwatchScript
     .click("//div[@data-albumid='72157667151238758']")
-    .pause(1000)
+    .pause(2000)
 }
 var activityBadgeDownload = function(driver)
 {   driver
@@ -277,7 +277,6 @@ var mobileBackgroundDownload = function(driver)
     //click back to album
     .url("https://www.flickr.com/photos/156280374@N06/sets/72157667151238758")
     .pause(1000)
-    .end()
 }
 module.exports={
 loginFlikr: loginFlikr,
@@ -291,5 +290,7 @@ memberLoginLogoDownload: memberLoginLogoDownload,
 memberAccountLogoDownload: memberAccountLogoDownload,
 topicImageDownload: topicImageDownload,
 brandConnectMemberImageDownload: brandConnectMemberImageDownload,
-pinterestDownload: pinterestDownload
+pinterestDownload: pinterestDownload,
+desktopBackgroundDownload:desktopBackgroundDownload,
+mobileBackgroundDownload:mobileBackgroundDownload
 }
