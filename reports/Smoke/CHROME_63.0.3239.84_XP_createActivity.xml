@@ -1,43 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="3"
-            failures="1"
+<testsuites errors="6"
+            failures="0"
             tests="4">
 
-<<<<<<< HEAD
-  <testsuite name="Smoke.createActivity"
-    errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0"
-    tests="2" time="592.1" timestamp="Tue, 20 Mar 2018 14:09:51 GMT">
-  
-    <testcase name="downloadImages" classname="Smoke.createActivity" time="46.31" assertions="1">
-=======
   <testsuite name="smoke.createActivity"
-    errors="3" failures="1" hostname="" id="" package="smoke" skipped="0"
-    tests="4" time="138.6" timestamp="Tue, 27 Mar 2018 20:54:58 GMT">
+    errors="6" failures="0" hostname="" id="" package="smoke" skipped="0"
+    tests="4" time="628.7" timestamp="Wed, 04 Apr 2018 14:57:24 GMT">
   
-    <testcase name="loginFlikr" classname="smoke.createActivity" time="70.93" assertions="1">
->>>>>>> 2dacb16
+    <testcase name="loginFlikr" classname="smoke.createActivity" time="74.16" assertions="1">
 
     
     </testcase>
   
-<<<<<<< HEAD
-    <testcase name="Creating an activity" classname="Smoke.createActivity" time="545.8" assertions="3">
+    <testcase name="activityBadgeDownload" classname="smoke.createActivity" time="25.60" assertions="0">
+    </testcase>
+  
+    <testcase name="pinterestDownload" classname="smoke.createActivity" time="24.77" assertions="0">
+    </testcase>
+  
+    <testcase name="createActivity" classname="smoke.createActivity" time="504.2" assertions="3">
 
     
 
     
-=======
-    <testcase name="activityBadgeDownload" classname="smoke.createActivity" time="14.82" assertions="0">
-    </testcase>
-  
-    <testcase name="pinterestDownload" classname="smoke.createActivity" time="17.58" assertions="0">
-    </testcase>
-  
-    <testcase name="createActivity" classname="smoke.createActivity" time="35.22" assertions="1">  <failure message="Testing if element &lt;//h1[@class='pull-left']&gt; contains text: &quot;Mission Hubs&quot;. Element could not be located.">    at Object.createActivity (/Users/tripthi/Desktop/Nightwatch/tests/smoke/createActivity.js:23:13)
-    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
-    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
-    at process._tickCallback (internal/process/next_tick.js:150:11)</failure>
->>>>>>> 2dacb16
 
     
     </testcase>
@@ -45,8 +30,8 @@
 
   
     <system-err>
-      ERROR: Unable to locate element: &quot;//input[@class='btn btn-login test-login-button']&quot; using: xpath
-    at Object.createActivity (/Users/tripthi/Desktop/Nightwatch/tests/smoke/createActivity.js:18:6)
+      ERROR: Unable to locate element: &quot;(//a[contains(text(),'Albums')])[3]&quot; using: xpath
+    at Object.loginFlikr (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadImages.js:27:6)
     at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -56,8 +41,8 @@
     at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
     at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//a[@class='test-nav-hubs']&quot; using: xpath
-    at Object.createActivity (/Users/tripthi/Desktop/Nightwatch/tests/smoke/createActivity.js:21:6)
+ERROR: Unable to locate element: &quot;//div[@data-albumid='72157667151238758']&quot; using: xpath
+    at Object.loginFlikr (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadImages.js:30:6)
     at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
     at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
     at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
@@ -67,17 +52,50 @@ ERROR: Unable to locate element: &quot;//a[@class='test-nav-hubs']&quot; using: 
     at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
     at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
     at process._tickCallback (internal/process/next_tick.js:150:11)
-ERROR: Unable to locate element: &quot;//h1[@class='pull-left']&quot; using: xpath
-    at F.command (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/api/assertions/containsText.js:46:21)
-    at F.module.exports.BaseAssertion._scheduleAssertion (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/assertion.js:87:17)
-    at F.module.exports.BaseAssertion._executeCommand (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/assertion.js:82:17)
-    at AssertionInstance.commandFn [as _commandFn] (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/assertion.js:180:21)
-    at AsyncTree.runCommand (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/queue.js:154:30)
-    at AsyncTree.runChildNode (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/queue.js:114:8)
-    at AsyncTree.walkDown (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/queue.js:80:10)
-    at AsyncTree.walkUp (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/queue.js:97:8)
-    at AsyncTree.walkDown (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/queue.js:90:12)
-    at AsyncTree.traverse (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/core/queue.js:73:8)
+ERROR: Unable to locate element: &quot;//a[@aria-label='activityBadge by YOU!']&quot; using: xpath
+    at Object.activityBadgeDownload (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadImages.js:37:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+ERROR: Unable to locate element: &quot;//i[@class='ui-icon-download']&quot; using: xpath
+    at Object.activityBadgeDownload (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadImages.js:40:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+ERROR: Unable to locate element: &quot;//li[@class='Original']/a&quot; using: xpath
+    at Object.activityBadgeDownload (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadImages.js:43:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
+ERROR: Unable to locate element: &quot;//i[@class='ui-icon-download']&quot; using: xpath
+    at Object.activityBadgeDownload (/Users/tripthi/Desktop/Nightwatch/tests/smoke/downloadImages.js:46:6)
+    at Module.call (/Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/module.js:62:34)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/lib/runner/testcase.js:70:29
+    at _fulfilled (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:834:54)
+    at self.promiseDispatch.done (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:863:30)
+    at Promise.promise.promiseDispatch (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:796:13)
+    at /Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:556:49
+    at runSingle (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:137:13)
+    at flush (/Users/tripthi/Desktop/Nightwatch/nightwatch/node_modules/q/q.js:125:13)
+    at process._tickCallback (internal/process/next_tick.js:150:11)
     </system-err>
   
 
