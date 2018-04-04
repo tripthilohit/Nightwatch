@@ -1,5 +1,6 @@
 var moduleAdminSignin = require('./createSurvey.js')
 var moduleDownloadImages = require('./downloadImages.js')
+var moduleMemberSignin = require('./memberSigninEmail.js')
 
 var dashboardSettings = function(driver)
 {
@@ -92,14 +93,28 @@ var dashboardSettings = function(driver)
     .execute('scrollTo(3000,3000)')
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/dashboardSettings2.png')
     .pause(2000)
+	
+}
+var memberVerify = function(driver)
+{	
+	driver
+	.useXpath()
+	.pause(2000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/dashboardMemberVerifyMale1.png')
+    .pause(4000)
+    .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/dashboardMemberVerifyMale1.png')
+	.execute('scrollTo(1500,1500)')
+	.pause(2000)
+	.saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/dashboardMemberVerifyCTA.png')
 	.end()
 }
-
 module.exports={
 loginFlikr: moduleDownloadImages.loginFlikr,
 heroImage1: moduleDownloadImages.heroImage1Download,
 heroImage2: moduleDownloadImages.heroImage2Download,
 adminSignin : moduleAdminSignin.signIn,
-dashboardSettings : dashboardSettings
+dashboardSettings : dashboardSettings,
+memberSignin: moduleMemberSignin.signinEmail,
+memberVerify: memberVerify
 
 }
