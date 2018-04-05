@@ -1,1 +1,1 @@
-require('/Users/tripthi/Desktop/Nightwatch/nightwatch/bin/runner.js');
+require('/Users/Sukada/Desktop/Nightwatch/nightwatch/bin/runner.js');

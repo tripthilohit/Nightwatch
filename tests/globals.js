@@ -53,8 +53,8 @@ module.exports = {
   beforeEach : function(done) {
     console.log('Starting up tunnel');
     cbt.start({
-      'username': 'tripthi.shetty@socialmedialink.com',
-      'authkey': 'u283c7d7d4fafeb7'
+      'username': 'sukada.ramakrishna@socialmedialink.com',
+      'authkey': 'u89e4efd851e17e7'
     }, function(err, data) {
       if (err) {
         done(err);
