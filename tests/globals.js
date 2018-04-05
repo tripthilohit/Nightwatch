@@ -1,5 +1,5 @@
 var userNames = {
-  memberURL: 'https://suksprint96e.staging.socialmedialink.com',
+  memberURL: 'https://suksprint96k.staging.socialmedialink.com',
   memberEmail: 'rad@yopmail.com',
   memberPassword: '12345678',
   memberFirstName: 'first',
@@ -12,11 +12,11 @@ var userNames = {
   member2FirstName:'Jims',
   member2LastName:'Snow',
   adminURL: 'https://admin.staging.socialmedialink.com/',
-  adminEmail: 'sub@yopmail.com',
+  adminEmail: 'suks@yopmail.com',
   adminPassword: 'General123$',
-  facebookEmail: 'sukada.testmember8@socialmedialink.com',
+  facebookEmail: 'tripthi.shetty@socialmedialink.com',
   facebookPass: 'general1234',
-  facebookEmail2: 'vcsjinc_martinazziescu_1454599736@tfbnw.net',
+  facebookEmail2: 'mark_acnwuko_frost@tfbnw.net',
   facebookPass2: 'general1234',
   twitterEmail: 'sukada.ramakrishna@socialmedialink.com',
   twitterPass: 'general1234',
@@ -45,7 +45,9 @@ var userNames = {
   postalCode:'K1A 0B1',
   memberNewEmail: 'sukrao17@yopmail.com',
   memberNewPassword:'12345678',
-  memberId:'12'
+  memberId:'12',
+  ageRange1: '15',
+  ageRange2: '35',
    };
 var cbt = require('cbt_tunnels');
 

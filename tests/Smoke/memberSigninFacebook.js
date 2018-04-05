@@ -23,6 +23,7 @@ var  SigninginFacebook=function(driver)
     .pause(2000)
     .click("//button[@value='1']")
     .pause(4000)
+    .execute('scrollTo(0,400)')
     .saveScreenshot('screenshots/sprint'+driver.globals.userNames.sprint+'/registrationSigninSuccessfulViaFacebook.png')
     .pause(2000)
     

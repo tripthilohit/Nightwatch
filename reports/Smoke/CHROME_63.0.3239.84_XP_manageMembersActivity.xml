@@ -5,20 +5,20 @@
 
   <testsuite name="Smoke.manageMembersActivity"
     errors="0" failures="0" hostname="" id="" package="Smoke" skipped="0"
-    tests="4" time="183.6" timestamp="Thu, 29 Mar 2018 18:18:59 GMT">
+    tests="4" time="249.1" timestamp="Thu, 05 Apr 2018 17:43:32 GMT">
   
-    <testcase name="loginFlikr" classname="Smoke.manageMembersActivity" time="46.49" assertions="1">
+    <testcase name="loginFlikr" classname="Smoke.manageMembersActivity" time="70.04" assertions="1">
 
     
     </testcase>
   
-    <testcase name="activityBadgeDownload" classname="Smoke.manageMembersActivity" time="13.81" assertions="0">
+    <testcase name="activityBadgeDownload" classname="Smoke.manageMembersActivity" time="21.11" assertions="0">
     </testcase>
   
-    <testcase name="signIn" classname="Smoke.manageMembersActivity" time="17.27" assertions="0">
+    <testcase name="signIn" classname="Smoke.manageMembersActivity" time="22.43" assertions="0">
     </testcase>
   
-    <testcase name="activity" classname="Smoke.manageMembersActivity" time="106.1" assertions="2">
+    <testcase name="activity" classname="Smoke.manageMembersActivity" time="135.5" assertions="2">
 
     
 
